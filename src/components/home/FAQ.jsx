@@ -28,7 +28,7 @@ export function FAQ() {
     },
     {
       q: 'Can we pause or cancel?',
-      a: 'Yes. You can pause or cancel at any time. We'll ensure a clean handoff.',
+      a: 'Yes. You can pause or cancel at any time. We\'ll ensure a clean handoff.',
     },
   ]
 

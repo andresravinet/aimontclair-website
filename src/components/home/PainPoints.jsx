@@ -12,7 +12,7 @@ export function PainPoints() {
     {
       icon: Clock,
       title: 'Missing Follow-ups',
-      description: 'Leads and clients fall through the cracks because reminders aren't getting sent.',
+      description: 'Leads and clients fall through the cracks because reminders aren\'t getting sent.',
     },
     {
       icon: Zap,

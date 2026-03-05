@@ -21,7 +21,7 @@ const serviceDetails = [
   {
     icon: Clock,
     title: 'Scheduling Automation',
-    description: 'We'll map your current process, then add the right nudges so clients show up and staff waste less time. Tailored automations to your stack and industry.',
+    description: 'We\'ll map your current process, then add the right nudges so clients show up and staff waste less time. Tailored automations to your stack and industry.',
     benefits: [
       'Reduce no-show rates with smart reminders',
       'Sync bookings across all your platforms',
@@ -47,7 +47,7 @@ const serviceDetails = [
   {
     icon: BookOpen,
     title: 'Team Training',
-    description: 'We deliver hands-on workshops that empower your team to confidently use AI tools and modern digital workflows. Each workshop is tailored to your team's current skill level and business goals.',
+    description: 'We deliver hands-on workshops that empower your team to confidently use AI tools and modern digital workflows. Each workshop is tailored to your team\'s current skill level and business goals.',
     benefits: [
       'Hands-on training for your entire team',
       'Customized to your tools and workflows',
