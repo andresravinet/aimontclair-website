@@ -1,22 +1,29 @@
 import { motion } from 'framer-motion'
+import { AnimatedCounter } from '../AnimatedCounter'
 
 const results = [
   {
     icon: '⚖️',
     business: 'Law Firm',
-    result: 'Reduced intake calls by 60%',
+    stat: 60,
+    suffix: '%',
+    result: 'Reduced intake calls',
     detail: 'AI chatbot handles initial client screening 24/7',
   },
   {
     icon: '🏥',
     business: 'Medical Office',
-    result: 'Saved 8 hours/week',
+    stat: 8,
+    suffix: ' hrs',
+    result: 'Saved per week',
     detail: 'Automated appointment scheduling and reminders',
   },
   {
     icon: '🛍️',
     business: 'Retail Shop',
-    result: '3x more leads captured after hours',
+    stat: 3,
+    suffix: 'x',
+    result: 'More leads captured after hours',
     detail: 'AI assistant answers questions when the store is closed',
   },
 ]
@@ -27,6 +34,15 @@ const trustSignals = [
   '⚡ Live in 1-6 weeks',
   '🤝 No long-term contracts',
 ]
+
+const container = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.1 } },
+}
+const card = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: 'easeOut' } },
+}
 
 export function SocialProof() {
   return (
@@ -47,25 +63,34 @@ export function SocialProof() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-40px' }}
+          variants={container}
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8"
+        >
           {results.map((item, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-white rounded-xl p-6 shadow-sm border border-gray-100"
+              variants={card}
+              className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
             >
-              <div className="text-3xl mb-3">{item.icon}</div>
-              <div className="text-xs font-semibold text-lime uppercase tracking-wide mb-1">
-                {item.business}
+              <div className="h-1 bg-gradient-to-r from-brand to-teal-400 rounded-t-xl" />
+              <div className="p-6">
+                <div className="text-3xl mb-3">{item.icon}</div>
+                <div className="text-xs font-semibold text-brand uppercase tracking-wide mb-1">
+                  {item.business}
+                </div>
+                <div className="text-4xl font-bold text-brand mb-1">
+                  <AnimatedCounter target={item.stat} suffix={item.suffix} />
+                </div>
+                <h3 className="text-lg font-bold text-navy mb-2">{item.result}</h3>
+                <p className="text-gray-600 text-sm">{item.detail}</p>
               </div>
-              <h3 className="text-xl font-bold text-navy mb-2">{item.result}</h3>
-              <p className="text-gray-600 text-sm">{item.detail}</p>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         <p className="text-center text-xs text-gray-400 mb-12">
           Results based on typical client outcomes. Names withheld for privacy.

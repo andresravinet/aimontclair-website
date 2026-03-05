@@ -138,7 +138,7 @@ export default function Industries() {
                 >
                   <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
                     <div>
-                      <Icon className="w-14 h-14 text-lime mb-4" />
+                      <Icon className="w-14 h-14 text-brand mb-4" />
                       <h2 className="text-3xl font-bold text-navy mb-3">{industry.title}</h2>
                       <p className="text-lg text-gray-600">{industry.description}</p>
                     </div>
@@ -148,7 +148,7 @@ export default function Industries() {
                       <ul className="space-y-3 mb-6">
                         {industry.useCases.map((useCase, i) => (
                           <li key={i} className="flex items-start gap-3">
-                            <span className="text-lime font-bold flex-shrink-0">→</span>
+                            <span className="text-brand font-bold flex-shrink-0">→</span>
                             <span className="text-gray-700">{useCase}</span>
                           </li>
                         ))}

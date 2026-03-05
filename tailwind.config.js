@@ -9,6 +9,11 @@ module.exports = {
         'navy': '#0F172A',
         'lime': '#22C55E',
         'slate-light': '#F8FAFC',
+        brand: {
+          DEFAULT: '#0EA5A0',
+          dark: '#0C8F8A',
+          light: '#E6F7F7',
+        },
       },
       fontFamily: {
         'sans': ['Inter', 'sans-serif'],

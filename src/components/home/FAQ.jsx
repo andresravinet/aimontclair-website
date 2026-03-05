@@ -81,7 +81,7 @@ export function FAQ() {
               >
                 <span className="font-600 text-navy text-lg">{faq.q}</span>
                 <ChevronDown
-                  className={`w-5 h-5 text-lime flex-shrink-0 transition-transform ${
+                  className={`w-5 h-5 text-brand flex-shrink-0 transition-transform ${
                     openIdx === idx ? 'rotate-180' : ''
                   }`}
                 />

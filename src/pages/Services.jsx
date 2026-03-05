@@ -115,7 +115,7 @@ export default function Services() {
               >
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                   <motion.div variants={itemVariants}>
-                    <Icon className="w-16 h-16 text-lime mb-4" />
+                    <Icon className="w-16 h-16 text-brand mb-4" />
                     <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">{service.title}</h2>
                     <p className="text-lg text-gray-600 mb-6">{service.description}</p>
 
@@ -124,7 +124,7 @@ export default function Services() {
                       <ul className="space-y-2">
                         {service.benefits.map((benefit, i) => (
                           <li key={i} className="flex items-start gap-2 text-gray-700">
-                            <span className="text-lime font-bold">✓</span>
+                            <span className="text-brand font-bold">✓</span>
                             <span>{benefit}</span>
                           </li>
                         ))}

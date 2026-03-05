@@ -8,6 +8,7 @@ import { Industries } from '../components/home/Industries'
 import { Testimonials } from '../components/home/Testimonials'
 import { FAQ } from '../components/home/FAQ'
 import { CTASection } from '../components/home/CTASection'
+import { ScrollReveal } from '../components/ScrollReveal'
 
 export default function Home() {
   useEffect(() => {
@@ -21,14 +22,14 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <PainPoints />
-      <Services />
-      <SocialProof />
-      <HowItWorks />
-      <Industries />
-      <Testimonials />
-      <FAQ />
-      <CTASection />
+      <ScrollReveal><PainPoints /></ScrollReveal>
+      <ScrollReveal delay={0.1}><Services /></ScrollReveal>
+      <ScrollReveal><SocialProof /></ScrollReveal>
+      <ScrollReveal delay={0.05}><HowItWorks /></ScrollReveal>
+      <ScrollReveal><Industries /></ScrollReveal>
+      <ScrollReveal delay={0.05}><Testimonials /></ScrollReveal>
+      <ScrollReveal><FAQ /></ScrollReveal>
+      <ScrollReveal delay={0.1}><CTASection /></ScrollReveal>
     </>
   )
 }

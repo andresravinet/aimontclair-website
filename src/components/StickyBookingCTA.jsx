@@ -23,7 +23,7 @@ export function StickyBookingCTA() {
         </span>
         <a
           href="mailto:hello@aimontclair.com"
-          className="bg-lime text-navy text-sm sm:text-base font-bold px-5 py-2 rounded-lg hover:bg-lime/90 transition-colors whitespace-nowrap"
+          className="bg-brand text-white text-sm sm:text-base font-bold px-5 py-2 rounded-lg hover:bg-brand/90 transition-colors whitespace-nowrap"
         >
           Book Free Consultation &rarr;
         </a>

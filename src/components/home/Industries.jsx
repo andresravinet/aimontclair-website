@@ -85,7 +85,7 @@ export function Industries() {
             return (
               <motion.div key={idx} variants={itemVariants}>
                 <Card>
-                  <Icon className="w-10 h-10 text-lime mb-4" />
+                  <Icon className="w-10 h-10 text-brand mb-4" />
                   <h3 className="text-lg font-bold text-navy mb-2">{industry.title}</h3>
                   <p className="text-gray-600 text-sm">{industry.benefit}</p>
                 </Card>

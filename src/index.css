@@ -49,7 +49,7 @@ html {
 }
 
 .btn-primary {
-  @apply px-6 py-3 bg-lime font-semibold text-navy rounded-lg hover:bg-green-500 transition-all duration-300;
+  @apply px-6 py-3 bg-brand font-semibold text-navy rounded-lg hover:bg-brand-dark transition-all duration-300;
 }
 
 .btn-secondary {

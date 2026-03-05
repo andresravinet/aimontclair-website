@@ -69,7 +69,7 @@ export function HowItWorks() {
             <motion.div key={idx} variants={itemVariants}>
               <Card>
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-lime text-navy flex items-center justify-center font-bold text-lg">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-brand text-white flex items-center justify-center font-bold text-lg">
                     {step.number}
                   </div>
                   <div>

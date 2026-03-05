@@ -32,7 +32,7 @@ export default function About() {
             {/* Intro */}
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-3">Meet Andres Ravinet</h1>
-              <p className="text-xl text-lime font-semibold mb-4">AI &amp; Automation Consultant, Montclair NJ</p>
+              <p className="text-xl text-brand font-semibold mb-4">AI &amp; Automation Consultant, Montclair NJ</p>
               <p className="text-lg text-gray-300 max-w-2xl leading-relaxed">
                 Helping local businesses across Essex County automate the repetitive work that
                 slows them down &mdash; so they can focus on growth, not admin.

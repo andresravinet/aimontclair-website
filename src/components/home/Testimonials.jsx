@@ -71,7 +71,7 @@ export function Testimonials() {
               className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow flex flex-col"
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-full bg-lime bg-opacity-15 flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-brand bg-opacity-15 flex items-center justify-center flex-shrink-0">
                   <Icon className="w-5 h-5 text-navy" />
                 </div>
                 <p className="text-sm font-semibold text-gray-500">{business}</p>
@@ -79,7 +79,7 @@ export function Testimonials() {
               <h3 className="text-xl font-bold text-navy mb-3">{result}</h3>
               <p className="text-gray-600 text-base leading-relaxed flex-1">{detail}</p>
               <div className="mt-5">
-                <span className="inline-block bg-lime bg-opacity-20 text-navy text-xs font-semibold px-3 py-1 rounded-full">
+                <span className="inline-block bg-brand bg-opacity-20 text-navy text-xs font-semibold px-3 py-1 rounded-full">
                   {tag}
                 </span>
               </div>

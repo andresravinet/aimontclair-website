@@ -11,12 +11,14 @@ export function CTASection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Automate?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Montclair&apos;s small businesses deserve the same tools as the big guys.
+          </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Let's talk about how AI can work for your business. Start with a free consultation-no pressure, no sales pitch.
+            Let&apos;s build yours. Free 30-minute audit &mdash; we&apos;ll identify exactly what can be automated in your business.
           </p>
           <Button href="/contact" variant="primary">
-            Schedule Your Free Audit
+            Get My Free Automation Audit
           </Button>
         </motion.div>
       </div>

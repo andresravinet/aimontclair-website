@@ -53,7 +53,7 @@ export default function Contact() {
                       name="name"
                       type="text"
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-lime text-base"
+                      className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent bg-white text-slate-900 placeholder:text-slate-400 text-base"
                       placeholder="Your full name"
                     />
                   </div>
@@ -67,7 +67,7 @@ export default function Contact() {
                       name="business"
                       type="text"
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-lime text-base"
+                      className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent bg-white text-slate-900 placeholder:text-slate-400 text-base"
                       placeholder="Your business name"
                     />
                   </div>
@@ -81,7 +81,7 @@ export default function Contact() {
                       name="email"
                       type="email"
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-lime text-base"
+                      className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent bg-white text-slate-900 placeholder:text-slate-400 text-base"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -94,7 +94,7 @@ export default function Contact() {
                       id="phone"
                       name="phone"
                       type="tel"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-lime text-base"
+                      className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent bg-white text-slate-900 placeholder:text-slate-400 text-base"
                       placeholder="(973) 555-0100"
                     />
                   </div>
@@ -108,7 +108,7 @@ export default function Contact() {
                       name="timesink"
                       required
                       rows={4}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-lime text-base resize-none"
+                      className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent bg-white text-slate-900 placeholder:text-slate-400 text-base resize-none"
                       placeholder="e.g. Answering the same phone questions all day, manually scheduling appointments, following up with leads..."
                     />
                   </div>
@@ -120,7 +120,7 @@ export default function Contact() {
                     <select
                       id="source"
                       name="source"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-lime text-base bg-white"
+                      className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent bg-white text-slate-900 placeholder:text-slate-400 text-base"
                     >
                       <option value="">Select...</option>
                       <option value="Google">Google</option>
@@ -133,7 +133,7 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="w-full bg-lime text-navy font-bold py-3 px-6 rounded-lg text-base hover:bg-lime-dark transition-colors"
+                    className="w-full py-3 px-6 bg-brand hover:bg-brand-dark text-white font-semibold rounded-lg transition-colors duration-200 text-lg cursor-pointer"
                   >
                     Send Message &rarr;
                   </button>
@@ -154,17 +154,17 @@ export default function Contact() {
                 <h2 className="text-2xl font-bold text-navy mb-5">Get in Touch</h2>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3 text-gray-700">
-                    <Mail className="w-5 h-5 text-lime flex-shrink-0" />
-                    <a href="mailto:hello@aimontclair.com" className="text-lime hover:underline font-medium">
+                    <Mail className="w-5 h-5 text-brand flex-shrink-0" />
+                    <a href="mailto:hello@aimontclair.com" className="text-brand hover:underline font-medium">
                       hello@aimontclair.com
                     </a>
                   </li>
                   <li className="flex items-start gap-3 text-gray-700">
-                    <MapPin className="w-5 h-5 text-lime flex-shrink-0 mt-0.5" />
+                    <MapPin className="w-5 h-5 text-brand flex-shrink-0 mt-0.5" />
                     <span>Montclair, NJ &mdash; serving all of Essex County</span>
                   </li>
                   <li className="flex items-center gap-3 text-gray-700">
-                    <Clock className="w-5 h-5 text-lime flex-shrink-0" />
+                    <Clock className="w-5 h-5 text-brand flex-shrink-0" />
                     <span>We respond within 1 business day</span>
                   </li>
                 </ul>
@@ -182,7 +182,7 @@ export default function Contact() {
                     'Local to Montclair, NJ',
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3 text-gray-700">
-                      <CheckCircle className="w-5 h-5 text-lime flex-shrink-0" />
+                      <CheckCircle className="w-5 h-5 text-brand flex-shrink-0" />
                       <span className="text-base">{item}</span>
                     </li>
                   ))}
@@ -190,7 +190,7 @@ export default function Contact() {
               </div>
 
               {/* Quote */}
-              <div className="border-l-4 border-lime pl-5">
+              <div className="border-l-4 border-brand pl-5">
                 <p className="text-gray-600 italic text-lg leading-relaxed">
                   &ldquo;Most small business owners I talk to are sitting on 5-10 hours a week of
                   work that can be automated. The first call is just about figuring out where

@@ -24,22 +24,22 @@ export function Footer() {
             <h4 className="font-600 mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <Link to="/" className="hover:text-lime transition-colors">
+                <Link to="/" className="hover:text-brand transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-lime transition-colors">
+                <Link to="/services" className="hover:text-brand transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="hover:text-lime transition-colors">
+                <Link to="/about" className="hover:text-brand transition-colors">
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-lime transition-colors">
+                <Link to="/contact" className="hover:text-brand transition-colors">
                   Contact
                 </Link>
               </li>
@@ -51,22 +51,22 @@ export function Footer() {
             <h4 className="font-600 mb-4">Services</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <a href="/#services" className="hover:text-lime transition-colors">
+                <a href="/#services" className="hover:text-brand transition-colors">
                   AI Chatbots
                 </a>
               </li>
               <li>
-                <a href="/#services" className="hover:text-lime transition-colors">
+                <a href="/#services" className="hover:text-brand transition-colors">
                   Scheduling Automation
                 </a>
               </li>
               <li>
-                <a href="/#services" className="hover:text-lime transition-colors">
+                <a href="/#services" className="hover:text-brand transition-colors">
                   Workflow Automation
                 </a>
               </li>
               <li>
-                <a href="/#services" className="hover:text-lime transition-colors">
+                <a href="/#services" className="hover:text-brand transition-colors">
                   AI Training
                 </a>
               </li>
@@ -79,7 +79,7 @@ export function Footer() {
             <ul className="space-y-3 text-gray-400 text-sm">
               <li className="flex items-start gap-2">
                 <Mail size={16} className="mt-0.5 flex-shrink-0" />
-                <a href="mailto:hello@aimontclair.com" className="hover:text-lime transition-colors">
+                <a href="mailto:hello@aimontclair.com" className="hover:text-brand transition-colors">
                   hello@aimontclair.com
                 </a>
               </li>

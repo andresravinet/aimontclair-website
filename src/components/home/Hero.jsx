@@ -1,75 +1,67 @@
 import { motion } from 'framer-motion'
 import { Button } from '../ui/Button'
 
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.15, duration: 0.5, ease: 'easeOut' },
+  }),
+}
+
 export function Hero() {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.1,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8 },
-    },
-  }
-
   return (
     <section className="gradient-navy-to-slate text-white py-20 md:py-32">
       <div className="container-custom">
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-          className="max-w-3xl"
-        >
-          <motion.h1 variants={itemVariants} className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            AI Automation for Main Street Businesses
-          </motion.h1>
+        <div className="max-w-3xl">
+          <motion.div custom={0} initial="hidden" animate="visible" variants={fadeUp}>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              Your Montclair Business, Running on Autopilot
+            </h1>
+          </motion.div>
 
-          <motion.p variants={itemVariants} className="text-xl text-gray-300 mb-6 leading-relaxed">
-            Stop wasting time on repetitive tasks. We help local businesses in Montclair and Essex County automate the work that&apos;s slowing you down&mdash;so you can focus on what matters.
-          </motion.p>
+          <motion.div custom={1} initial="hidden" animate="visible" variants={fadeUp}>
+            <p className="text-xl text-gray-300 mb-6 leading-relaxed">
+              We build AI automation systems for local NJ businesses — so you stop losing hours to scheduling, follow-ups, and inbox management. No long-term contracts. No enterprise price tags. Live in weeks.
+            </p>
+          </motion.div>
 
           {/* Founder strip */}
-          <motion.div variants={itemVariants} className="flex items-center gap-4 mb-8">
-            <div
-              className="w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-white text-sm"
-              style={{ background: '#0f2a4a', border: '2px solid rgba(255,255,255,0.3)' }}
-            >
-              AR
+          <motion.div custom={2} initial="hidden" animate="visible" variants={fadeUp}>
+            <div className="flex items-center gap-4 mb-8">
+              <div
+                className="w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-white text-sm"
+                style={{ background: '#0f2a4a', border: '2px solid rgba(255,255,255,0.3)' }}
+              >
+                AR
+              </div>
+              <p className="text-gray-300 italic text-base leading-snug">
+                &ldquo;Hi, I&apos;m Andres &mdash; I&apos;ve helped Essex County businesses automate the repetitive work that&apos;s stealing their time. Let me show you what that looks like for yours.&rdquo;
+              </p>
             </div>
-            <p className="text-gray-300 italic text-base leading-snug">
-              &ldquo;Hi, I&apos;m Andres &mdash; I help Montclair businesses automate the admin work that&apos;s killing your productivity.&rdquo;
-            </p>
           </motion.div>
 
-          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 mb-12 items-center">
-            <Button href="/contact" variant="primary">
-              Book Free Consultation
-            </Button>
-            <a
-              href="#how-it-works"
-              className="text-gray-300 hover:text-white transition-colors text-base flex items-center gap-1 underline underline-offset-2"
-            >
-              See How It Works <span aria-hidden="true">&rarr;</span>
-            </a>
-          </motion.div>
+          <motion.div custom={3} initial="hidden" animate="visible" variants={fadeUp}>
+            <div className="flex flex-col sm:flex-row gap-4 mb-12 items-center">
+              <Button href="/contact" variant="primary">
+                Get My Free Automation Audit
+              </Button>
+              <a
+                href="#how-it-works"
+                className="text-gray-300 hover:text-white transition-colors text-base flex items-center gap-1 underline underline-offset-2"
+              >
+                See a real example ↓
+              </a>
+            </div>
 
-          <motion.div variants={itemVariants} className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4 inline-block">
-            <p className="text-sm font-500">
-              Serving Montclair &middot; Bloomfield &middot; Glen Ridge &middot; Verona &middot; Essex County
-            </p>
+            <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4 inline-block">
+              <p className="text-sm font-500">
+                Serving Montclair &middot; Bloomfield &middot; Glen Ridge &middot; Verona &middot; Essex County
+              </p>
+            </div>
           </motion.div>
-        </motion.div>
+        </div>
       </div>
     </section>
   )
