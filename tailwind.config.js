@@ -16,7 +16,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        'sans': ['Inter', 'sans-serif'],
+        'sans': ['Inter', 'system-ui', 'sans-serif'],
+        'display': ['Sora', 'system-ui', 'sans-serif'],
       },
       animation: {
         'fade-in-up': 'fadeInUp 0.6s ease-out',

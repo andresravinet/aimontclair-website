@@ -5,9 +5,9 @@ import { Services } from '../components/home/Services'
 import { SocialProof } from '../components/home/SocialProof'
 import { HowItWorks } from '../components/home/HowItWorks'
 import { Industries } from '../components/home/Industries'
-import { Testimonials } from '../components/home/Testimonials'
 import { FAQ } from '../components/home/FAQ'
 import { CTASection } from '../components/home/CTASection'
+import { InlineCTA } from '../components/home/InlineCTA'
 import { ScrollReveal } from '../components/ScrollReveal'
 
 export default function Home() {
@@ -23,11 +23,11 @@ export default function Home() {
     <>
       <Hero />
       <ScrollReveal><PainPoints /></ScrollReveal>
+      <ScrollReveal delay={0.1}><Industries /></ScrollReveal>
       <ScrollReveal delay={0.1}><Services /></ScrollReveal>
+      <ScrollReveal><HowItWorks /></ScrollReveal>
       <ScrollReveal><SocialProof /></ScrollReveal>
-      <ScrollReveal delay={0.05}><HowItWorks /></ScrollReveal>
-      <ScrollReveal><Industries /></ScrollReveal>
-      <ScrollReveal delay={0.05}><Testimonials /></ScrollReveal>
+      <ScrollReveal><InlineCTA /></ScrollReveal>
       <ScrollReveal><FAQ /></ScrollReveal>
       <ScrollReveal delay={0.1}><CTASection /></ScrollReveal>
     </>

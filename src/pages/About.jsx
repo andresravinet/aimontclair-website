@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Card } from '../components/ui/Card'
 import { Button } from '../components/ui/Button'
 
 export default function About() {
@@ -20,18 +19,20 @@ export default function About() {
           <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
             {/* Avatar */}
             <div className="flex flex-col items-center flex-shrink-0">
-              <div
-                className="w-32 h-32 rounded-full bg-navy border-4 border-white border-opacity-30 flex items-center justify-center"
-                style={{ background: '#0f2a4a' }}
-              >
-                <span className="text-white text-4xl font-bold">AR</span>
+              <div className="relative">
+                <div className="w-32 h-32 rounded-full bg-gradient-to-br from-brand to-[#0C8F8A] flex items-center justify-center shadow-xl ring-4 ring-brand/20">
+                  <span className="text-3xl font-bold text-white font-display">AR</span>
+                </div>
+                <div className="absolute -bottom-2 -right-2 bg-white rounded-full p-2 shadow-lg">
+                  <div className="w-4 h-4 rounded-full bg-brand animate-pulse" />
+                </div>
+                <p className="text-slate-400 text-sm text-center mt-3">[ Photo coming soon ]</p>
               </div>
-              <p className="text-gray-400 text-xs mt-2 text-center">[ Photo coming soon ]</p>
             </div>
 
             {/* Intro */}
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-3">Meet Andres Ravinet</h1>
+              <h1 className="text-4xl md:text-5xl font-bold font-display mb-3">Meet Andres Ravinet</h1>
               <p className="text-xl text-brand font-semibold mb-4">AI &amp; Automation Consultant, Montclair NJ</p>
               <p className="text-lg text-gray-300 max-w-2xl leading-relaxed">
                 Helping local businesses across Essex County automate the repetitive work that
@@ -52,7 +53,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <div className="prose prose-lg max-w-none mb-16">
-              <h2 className="text-3xl font-bold text-navy mb-6">The Story</h2>
+              <h2 className="text-3xl font-bold font-display text-navy mb-6">The Story</h2>
               <p className="text-gray-700 text-lg leading-relaxed mb-5">
                 Andres Ravinet is a technology consultant and trainer based right here in Montclair, NJ.
                 Over the past several years he has worked with law firms, medical offices, retail shops,
@@ -79,38 +80,44 @@ export default function About() {
 
             {/* Why AI Montclair */}
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-navy mb-8">Why AI Montclair</h2>
+              <h2 className="text-3xl font-bold font-display text-navy mb-8">Why AI Montclair</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <Card>
-                  <div className="text-3xl mb-3">📍</div>
+                <div className="p-6 bg-white rounded-xl border border-slate-100 hover:shadow-md hover:border-brand/20 transition-all duration-200">
+                  <div className="w-10 h-10 bg-brand/10 rounded-lg flex items-center justify-center mb-4">
+                    <span className="text-2xl">📍</span>
+                  </div>
                   <h3 className="text-lg font-bold text-navy mb-2">Local &amp; Accountable</h3>
                   <p className="text-gray-600">
                     Based in Montclair. We know Essex County. When something needs fixing, you call
                     Andres directly &mdash; not a help desk.
                   </p>
-                </Card>
-                <Card>
-                  <div className="text-3xl mb-3">💰</div>
+                </div>
+                <div className="p-6 bg-white rounded-xl border border-slate-100 hover:shadow-md hover:border-brand/20 transition-all duration-200">
+                  <div className="w-10 h-10 bg-brand/10 rounded-lg flex items-center justify-center mb-4">
+                    <span className="text-2xl">💰</span>
+                  </div>
                   <h3 className="text-lg font-bold text-navy mb-2">Fixed Pricing, No Surprises</h3>
                   <p className="text-gray-600">
                     Every project has a flat price agreed upfront. No hourly billing creep,
                     no scope surprises, no long-term contracts you have to fight to exit.
                   </p>
-                </Card>
-                <Card>
-                  <div className="text-3xl mb-3">⚡</div>
+                </div>
+                <div className="p-6 bg-white rounded-xl border border-slate-100 hover:shadow-md hover:border-brand/20 transition-all duration-200">
+                  <div className="w-10 h-10 bg-brand/10 rounded-lg flex items-center justify-center mb-4">
+                    <span className="text-2xl">⚡</span>
+                  </div>
                   <h3 className="text-lg font-bold text-navy mb-2">Fast Delivery</h3>
                   <p className="text-gray-600">
                     Live in weeks, not months. Most automations are up and running in one to
                     six weeks &mdash; you see results fast without a drawn-out project.
                   </p>
-                </Card>
+                </div>
               </div>
             </div>
 
             {/* CTA */}
             <div className="bg-slate-50 rounded-2xl p-10 text-center">
-              <h2 className="text-2xl font-bold text-navy mb-3">Ready to automate your business?</h2>
+              <h2 className="text-2xl font-bold font-display text-navy mb-3">Ready to automate your business?</h2>
               <p className="text-gray-600 mb-6 text-lg">
                 Start with a free 30-minute conversation. No pitch, no commitment &mdash;
                 just an honest look at where automation can help you most.
