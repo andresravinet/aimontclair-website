@@ -1,0 +1,103 @@
+import { Mail, MapPin, Phone } from 'lucide-react'
+import { Link } from 'react-router-dom'
+
+export function Footer() {
+  const currentYear = new Date().getFullYear()
+
+  return (
+    <footer className="bg-navy text-white pt-16 pb-8">
+      <div className="container-custom">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-gray-700">
+          {/* Brand */}
+          <div>
+            <h3 className="text-xl font-bold mb-2">AI Montclair</h3>
+            <p className="text-gray-400 text-sm">
+              AI automation for small businesses in Montclair and Essex County, NJ.
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="font-600 mb-4">Quick Links</h4>
+            <ul className="space-y-2 text-gray-400 text-sm">
+              <li>
+                <Link to="/" className="hover:text-lime transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/services" className="hover:text-lime transition-colors">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/industries" className="hover:text-lime transition-colors">
+                  Industries
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="hover:text-lime transition-colors">
+                  About
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h4 className="font-600 mb-4">Services</h4>
+            <ul className="space-y-2 text-gray-400 text-sm">
+              <li>
+                <a href="#" className="hover:text-lime transition-colors">
+                  AI Chatbots
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-lime transition-colors">
+                  Scheduling
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-lime transition-colors">
+                  Workflow Automation
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-lime transition-colors">
+                  Training
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="font-600 mb-4">Contact</h4>
+            <ul className="space-y-3 text-gray-400 text-sm">
+              <li className="flex items-start gap-2">
+                <Mail size={16} className="mt-0.5 flex-shrink-0" />
+                <a href="mailto:hello@aimontclair.com" className="hover:text-lime transition-colors">
+                  hello@aimontclair.com
+                </a>
+              </li>
+              <li className="flex items-start gap-2">
+                <MapPin size={16} className="mt-0.5 flex-shrink-0" />
+                <span>Montclair, NJ 07043</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom */}
+        <div className="pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-gray-400 text-sm">
+            © {currentYear} AI Montclair. All rights reserved.
+          </p>
+          <p className="text-gray-400 text-sm mt-4 md:mt-0">
+            Serving Montclair · Bloomfield · Glen Ridge · Verona · Essex County
+          </p>
+        </div>
+      </div>
+    </footer>
+  )
+}
