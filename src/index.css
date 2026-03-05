@@ -48,11 +48,11 @@ html {
 }
 
 .btn-primary {
-  @apply px-6 py-3 bg-lime font-600 text-navy rounded-lg hover:bg-green-500 transition-all duration-300;
+  @apply px-6 py-3 bg-lime font-semibold text-navy rounded-lg hover:bg-green-500 transition-all duration-300;
 }
 
 .btn-secondary {
-  @apply px-6 py-3 border-2 border-navy text-navy font-600 rounded-lg hover:bg-navy hover:text-white transition-all duration-300;
+  @apply px-6 py-3 border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-all duration-300;
 }
 
 /* Scroll animations */
