@@ -8,6 +8,7 @@ import { HowItWorks } from '../components/home/HowItWorks'
 import { Pricing } from '../components/home/Pricing'
 import { Industries } from '../components/home/Industries'
 import { FAQ } from '../components/home/FAQ'
+import { Testimonials } from '../components/home/Testimonials'
 import { CTASection } from '../components/home/CTASection'
 import { InlineCTA } from '../components/home/InlineCTA'
 import { ScrollReveal } from '../components/ScrollReveal'
@@ -31,6 +32,7 @@ export default function Home() {
       <ScrollReveal><HowItWorks /></ScrollReveal>
       <ScrollReveal><Pricing /></ScrollReveal>
       <ScrollReveal><SocialProof /></ScrollReveal>
+      <ScrollReveal delay={0.1}><Testimonials /></ScrollReveal>
       <ScrollReveal><InlineCTA /></ScrollReveal>
       <ScrollReveal><FAQ /></ScrollReveal>
       <ScrollReveal delay={0.1}><CTASection /></ScrollReveal>
