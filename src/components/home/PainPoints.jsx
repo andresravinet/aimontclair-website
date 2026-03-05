@@ -41,7 +41,7 @@ export function PainPoints() {
   }
 
   return (
-    <section className="py-16 md:py-24 bg-slate-light">
+    <section className="py-16 md:py-24 bg-navy text-white">
       <div className="container-custom">
         <motion.div
           initial="hidden"
@@ -50,10 +50,10 @@ export function PainPoints() {
           variants={containerVariants}
           className="text-center mb-12"
         >
-          <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-navy mb-4">
+          <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-white mb-4">
             Sound Familiar?
           </motion.h2>
-          <motion.p variants={itemVariants} className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <motion.p variants={itemVariants} className="text-lg text-gray-300 max-w-2xl mx-auto">
             Most small business owners face the same challenges. The good news: they're fixable.
           </motion.p>
         </motion.div>
@@ -72,7 +72,7 @@ export function PainPoints() {
                 <Card>
                   <Icon className="w-12 h-12 text-lime mb-4" />
                   <h3 className="text-xl font-bold text-navy mb-2">{point.title}</h3>
-                  <p className="text-gray-600">{point.description}</p>
+                  <p className="text-gray-600 text-base">{point.description}</p>
                 </Card>
               </motion.div>
             )

@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Header } from './components/layout/Header'
 import { Footer } from './components/layout/Footer'
-import { StickyBookingCTA } from './components/StickyBookingCTA'
 import Home from './pages/Home'
 import Services from './pages/Services'
 import Industries from './pages/Industries'
@@ -22,7 +21,6 @@ function App() {
         </Routes>
       </main>
       <Footer />
-      <StickyBookingCTA />
     </BrowserRouter>
   )
 }

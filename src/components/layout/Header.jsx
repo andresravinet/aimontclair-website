@@ -11,8 +11,8 @@ export function Header() {
   const navItems = [
     { label: 'Home', href: '/' },
     { label: 'Services', href: '/services' },
-    { label: 'Industries', href: '/industries' },
     { label: 'About', href: '/about' },
+    { label: 'Contact', href: '/contact' },
   ]
 
   return (
@@ -35,9 +35,6 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <a href="/contact" className="btn-primary">
-            Contact
-          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -65,9 +62,6 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
-              <a href="/contact" className="btn-primary">
-                Contact
-              </a>
             </div>
           </div>
         )}

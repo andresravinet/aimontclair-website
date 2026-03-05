@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { Mail, MapPin } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 export function Footer() {
@@ -11,8 +11,11 @@ export function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-xl font-bold mb-2">AI Montclair</h3>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-sm mb-3">
               AI automation for small businesses in Montclair and Essex County, NJ.
+            </p>
+            <p className="text-gray-500 text-xs">
+              Serving Montclair, Bloomfield, Glen Ridge, Verona &amp; Essex County, NJ
             </p>
           </div>
 
@@ -31,13 +34,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/industries" className="hover:text-lime transition-colors">
-                  Industries
+                <Link to="/about" className="hover:text-lime transition-colors">
+                  About
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="hover:text-lime transition-colors">
-                  About
+                <Link to="/contact" className="hover:text-lime transition-colors">
+                  Contact
                 </Link>
               </li>
             </ul>
@@ -48,23 +51,23 @@ export function Footer() {
             <h4 className="font-600 mb-4">Services</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <a href="#" className="hover:text-lime transition-colors">
+                <a href="/#services" className="hover:text-lime transition-colors">
                   AI Chatbots
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-lime transition-colors">
-                  Scheduling
+                <a href="/#services" className="hover:text-lime transition-colors">
+                  Scheduling Automation
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-lime transition-colors">
+                <a href="/#services" className="hover:text-lime transition-colors">
                   Workflow Automation
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-lime transition-colors">
-                  Training
+                <a href="/#services" className="hover:text-lime transition-colors">
+                  AI Training
                 </a>
               </li>
             </ul>
@@ -91,10 +94,10 @@ export function Footer() {
         {/* Bottom */}
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {currentYear} AI Montclair. All rights reserved.
+            &copy; {currentYear} AI Montclair. All rights reserved.
           </p>
           <p className="text-gray-400 text-sm mt-4 md:mt-0">
-            Serving Montclair · Bloomfield · Glen Ridge · Verona · Essex County
+            Serving Montclair &middot; Bloomfield &middot; Glen Ridge &middot; Verona &middot; Essex County
           </p>
         </div>
       </div>

@@ -35,22 +35,38 @@ export function Hero() {
             AI Automation for Main Street Businesses
           </motion.h1>
 
-          <motion.p variants={itemVariants} className="text-xl text-gray-300 mb-8 leading-relaxed">
-            Stop wasting time on repetitive tasks. We help local businesses in Montclair and Essex County automate the work that's slowing you down-so you can focus on what matters.
+          <motion.p variants={itemVariants} className="text-xl text-gray-300 mb-6 leading-relaxed">
+            Stop wasting time on repetitive tasks. We help local businesses in Montclair and Essex County automate the work that&apos;s slowing you down&mdash;so you can focus on what matters.
           </motion.p>
 
-          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 mb-12">
+          {/* Founder strip */}
+          <motion.div variants={itemVariants} className="flex items-center gap-4 mb-8">
+            <div
+              className="w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-white text-sm"
+              style={{ background: '#0f2a4a', border: '2px solid rgba(255,255,255,0.3)' }}
+            >
+              AR
+            </div>
+            <p className="text-gray-300 italic text-base leading-snug">
+              &ldquo;Hi, I&apos;m Andres &mdash; I help Montclair businesses automate the admin work that&apos;s killing your productivity.&rdquo;
+            </p>
+          </motion.div>
+
+          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 mb-12 items-center">
             <Button href="/contact" variant="primary">
               Book Free Consultation
             </Button>
-            <Button href="#how-it-works" variant="secondary">
-              See How It Works
-            </Button>
+            <a
+              href="#how-it-works"
+              className="text-gray-300 hover:text-white transition-colors text-base flex items-center gap-1 underline underline-offset-2"
+            >
+              See How It Works <span aria-hidden="true">&rarr;</span>
+            </a>
           </motion.div>
 
           <motion.div variants={itemVariants} className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4 inline-block">
             <p className="text-sm font-500">
-              Serving Montclair · Bloomfield · Glen Ridge · Verona · Essex County
+              Serving Montclair &middot; Bloomfield &middot; Glen Ridge &middot; Verona &middot; Essex County
             </p>
           </motion.div>
         </motion.div>

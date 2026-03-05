@@ -2,114 +2,121 @@ import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Card } from '../components/ui/Card'
 import { Button } from '../components/ui/Button'
-import { Zap, Users, Target } from 'lucide-react'
 
 export default function About() {
   useEffect(() => {
     document.title = 'About | AI Montclair'
     document.querySelector('meta[name="description"]')?.setAttribute(
       'content',
-      'Meet Andres Ravinet, AI automation consultant based in Montclair, NJ. Making AI accessible to Main Street businesses.'
+      'Meet Andres Ravinet, AI automation consultant based in Montclair, NJ. Making enterprise-grade automation accessible to Main Street businesses.'
     )
   }, [])
 
   return (
     <>
       {/* Hero */}
-      <section className="gradient-navy-to-slate text-white py-16 md:py-24">
+      <section className="gradient-navy-to-slate text-white py-16 md:py-28">
         <div className="container-custom">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">About AI Montclair</h1>
-          <p className="text-xl text-gray-300 max-w-2xl">
-            Local expertise. Hands-on service. Real results for small businesses.
-          </p>
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
+            {/* Avatar */}
+            <div className="flex flex-col items-center flex-shrink-0">
+              <div
+                className="w-32 h-32 rounded-full bg-navy border-4 border-white border-opacity-30 flex items-center justify-center"
+                style={{ background: '#0f2a4a' }}
+              >
+                <span className="text-white text-4xl font-bold">AR</span>
+              </div>
+              <p className="text-gray-400 text-xs mt-2 text-center">[ Photo coming soon ]</p>
+            </div>
+
+            {/* Intro */}
+            <div>
+              <h1 className="text-4xl md:text-5xl font-bold mb-3">Meet Andres Ravinet</h1>
+              <p className="text-xl text-lime font-semibold mb-4">AI &amp; Automation Consultant, Montclair NJ</p>
+              <p className="text-lg text-gray-300 max-w-2xl leading-relaxed">
+                Helping local businesses across Essex County automate the repetitive work that
+                slows them down &mdash; so they can focus on growth, not admin.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Story */}
+      {/* Bio */}
       <section className="py-16 md:py-24">
-        <div className="container-custom max-w-3xl">
+        <div className="container-custom max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="mb-12">
-              <h2 className="text-3xl font-bold text-navy mb-4">Meet Andres Ravinet</h2>
-              <p className="text-lg text-gray-700 mb-4">
-                Based in Montclair, NJ, Andres is an AI automation consultant with a mission: make artificial intelligence accessible and useful for small business owners.
+            <div className="prose prose-lg max-w-none mb-16">
+              <h2 className="text-3xl font-bold text-navy mb-6">The Story</h2>
+              <p className="text-gray-700 text-lg leading-relaxed mb-5">
+                Andres Ravinet is a technology consultant and trainer based right here in Montclair, NJ.
+                Over the past several years he has worked with law firms, medical offices, retail shops,
+                and service businesses across Essex County &mdash; helping them replace manual, time-consuming
+                processes with smart automation that actually sticks.
               </p>
-              <p className="text-lg text-gray-700 mb-4">
-                After years helping larger organizations implement automation and AI, Andres noticed a gap. Most small businesses wanted to automate but found enterprise solutions too expensive, too complex, or not built for their reality.
+              <p className="text-gray-700 text-lg leading-relaxed mb-5">
+                After seeing enterprise organizations transform their operations with AI, Andres noticed
+                a gap: the small businesses on Main Street wanted the same tools, but everything built
+                for the Fortune 500 was too expensive, too complex, and too slow. So he built AI Montclair
+                to close that gap.
               </p>
-              <p className="text-lg text-gray-700">
-                So he created AI Montclair-a consulting practice focused exclusively on local small businesses. The approach is simple: start small, measure impact, and scale what works. No bloated contracts. No months-long implementations. Just smart automation that delivers real time savings.
+              <p className="text-gray-700 text-lg leading-relaxed mb-5">
+                Every project is fixed-price with no long-term contracts. Most go live in one to six weeks.
+                You work directly with Andres &mdash; no offshore teams, no account managers in the way.
+                Just a neighbor who knows your community and can get things done.
+              </p>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                His belief is simple: enterprise-grade automation should be accessible to Main Street,
+                not just Fortune 500. A two-person law firm deserves the same efficiency tools as a
+                hundred-person firm &mdash; built to fit their budget and their reality.
               </p>
             </div>
 
             {/* Why AI Montclair */}
-            <div className="mb-12">
+            <div className="mb-16">
               <h2 className="text-3xl font-bold text-navy mb-8">Why AI Montclair</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <Card>
-                  <Zap className="w-10 h-10 text-lime mb-4" />
-                  <h3 className="font-bold text-navy mb-2">Local Expertise</h3>
-                  <p className="text-gray-600 text-sm">
-                    Based in Montclair. We understand your community, your challenges, and your timeline.
+                  <div className="text-3xl mb-3">📍</div>
+                  <h3 className="text-lg font-bold text-navy mb-2">Local &amp; Accountable</h3>
+                  <p className="text-gray-600">
+                    Based in Montclair. We know Essex County. When something needs fixing, you call
+                    Andres directly &mdash; not a help desk.
                   </p>
                 </Card>
                 <Card>
-                  <Users className="w-10 h-10 text-lime mb-4" />
-                  <h3 className="font-bold text-navy mb-2">Hands-On Service</h3>
-                  <p className="text-gray-600 text-sm">
-                    You get direct access. No offshore teams, no corporate handoffs. Just Andres and your business.
+                  <div className="text-3xl mb-3">💰</div>
+                  <h3 className="text-lg font-bold text-navy mb-2">Fixed Pricing, No Surprises</h3>
+                  <p className="text-gray-600">
+                    Every project has a flat price agreed upfront. No hourly billing creep,
+                    no scope surprises, no long-term contracts you have to fight to exit.
                   </p>
                 </Card>
                 <Card>
-                  <Target className="w-10 h-10 text-lime mb-4" />
-                  <h3 className="font-bold text-navy mb-2">Real Results</h3>
-                  <p className="text-gray-600 text-sm">
-                    We focus on measurable time savings and ROI-not buzzwords or vaporware.
+                  <div className="text-3xl mb-3">⚡</div>
+                  <h3 className="text-lg font-bold text-navy mb-2">Fast Delivery</h3>
+                  <p className="text-gray-600">
+                    Live in weeks, not months. Most automations are up and running in one to
+                    six weeks &mdash; you see results fast without a drawn-out project.
                   </p>
                 </Card>
               </div>
             </div>
 
-            {/* Philosophy */}
-            <div className="mb-12 bg-slate-light rounded-lg p-8">
-              <h2 className="text-3xl font-bold text-navy mb-4">Our Philosophy</h2>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="text-lime font-bold">✓</span>
-                  <span className="text-gray-700"><strong>Start small.</strong> Prove value on a low-risk pilot before scaling.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-lime font-bold">✓</span>
-                  <span className="text-gray-700"><strong>Measure impact.</strong> Every automation tracks time saved and ROI.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-lime font-bold">✓</span>
-                  <span className="text-gray-700"><strong>Scale what works.</strong> Build on wins. Iterate based on real feedback.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-lime font-bold">✓</span>
-                  <span className="text-gray-700"><strong>Fit your tools.</strong> Integrate with your existing systems, not replace them.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-lime font-bold">✓</span>
-                  <span className="text-gray-700"><strong>Transparent pricing.</strong> Fixed prices. No surprises. No lock-in.</span>
-                </li>
-              </ul>
-            </div>
-
             {/* CTA */}
-            <div className="text-center">
-              <h2 className="text-2xl font-bold text-navy mb-4">Let's Talk</h2>
-              <p className="text-gray-700 mb-6">
-                If you'd like to discuss how AI automation could work for your business, let's schedule a conversation.
+            <div className="bg-slate-50 rounded-2xl p-10 text-center">
+              <h2 className="text-2xl font-bold text-navy mb-3">Ready to automate your business?</h2>
+              <p className="text-gray-600 mb-6 text-lg">
+                Start with a free 30-minute conversation. No pitch, no commitment &mdash;
+                just an honest look at where automation can help you most.
               </p>
               <Button href="/contact" variant="primary">
-                Get In Touch
+                Book Free Consultation
               </Button>
             </div>
           </motion.div>
