@@ -7,7 +7,7 @@ export function Services() {
     {
       icon: MessageSquare,
       title: 'AI Chatbots',
-      description: 'We build branded assistants that greet visitors on your website and social channels, answer common questions, qualify leads, and book appointments hands‑free. Assistants are trained on your policies, pricing, and tone. Handoffs to staff are seamless when needed.',
+      description: 'We build branded assistants that greet visitors on your website and social channels, answer common questions, qualify leads, and book appointments hands-free. Assistants are trained on your policies, pricing, and tone. Handoffs to staff are seamless when needed.',
     },
     {
       icon: Clock,
@@ -17,7 +17,7 @@ export function Services() {
     {
       icon: Workflow,
       title: 'Workflow Automation',
-      description: 'When you have a unique workflow, we build to fit—integrations, internal tools, and specialty automations that move the needle. We start small, measure impact, and scale what works.',
+      description: 'When you have a unique workflow, we build to fit-integrations, internal tools, and specialty automations that move the needle. We start small, measure impact, and scale what works.',
     },
     {
       icon: BookOpen,

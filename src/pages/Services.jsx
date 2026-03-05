@@ -8,7 +8,7 @@ const serviceDetails = [
   {
     icon: MessageSquare,
     title: 'AI Chatbots',
-    description: 'We build branded assistants that greet visitors on your website and social channels, answer common questions, qualify leads, and book appointments hands‑free. Assistants are trained on your policies, pricing, and tone. Handoffs to staff are seamless when needed.',
+    description: 'We build branded assistants that greet visitors on your website and social channels, answer common questions, qualify leads, and book appointments hands-free. Assistants are trained on your policies, pricing, and tone. Handoffs to staff are seamless when needed.',
     benefits: [
       'Available 24/7 to answer customer questions',
       'Qualify leads before they reach your team',
@@ -34,7 +34,7 @@ const serviceDetails = [
   {
     icon: Workflow,
     title: 'Workflow Automation',
-    description: 'When you have a unique workflow, we build to fit—integrations, internal tools, and specialty automations that move the needle. We start small, measure impact, and scale what works.',
+    description: 'When you have a unique workflow, we build to fit-integrations, internal tools, and specialty automations that move the needle. We start small, measure impact, and scale what works.',
     benefits: [
       'Connect your apps so data flows automatically',
       'Custom automations for your unique business',

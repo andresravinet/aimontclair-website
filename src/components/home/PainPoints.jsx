@@ -17,7 +17,7 @@ export function PainPoints() {
     {
       icon: Zap,
       title: 'Wasted Hours on Repetitive Work',
-      description: 'Your team spends time on tasks that AI can handle—time they should spend on clients.',
+      description: 'Your team spends time on tasks that AI can handle-time they should spend on clients.',
     },
   ]
 

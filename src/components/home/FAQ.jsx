@@ -12,7 +12,7 @@ export function FAQ() {
     },
     {
       q: 'How long does it take?',
-      a: 'Quick wins can ship in 1–2 weeks. Larger rollouts typically take 3–6 weeks with weekly check-ins.',
+      a: 'Quick wins can ship in 1-2 weeks. Larger rollouts typically take 3-6 weeks with weekly check-ins.',
     },
     {
       q: 'How do you handle data and privacy?',

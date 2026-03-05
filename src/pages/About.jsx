@@ -43,7 +43,7 @@ export default function About() {
                 After years helping larger organizations implement automation and AI, Andres noticed a gap. Most small businesses wanted to automate but found enterprise solutions too expensive, too complex, or not built for their reality.
               </p>
               <p className="text-lg text-gray-700">
-                So he created AI Montclair—a consulting practice focused exclusively on local small businesses. The approach is simple: start small, measure impact, and scale what works. No bloated contracts. No months-long implementations. Just smart automation that delivers real time savings.
+                So he created AI Montclair-a consulting practice focused exclusively on local small businesses. The approach is simple: start small, measure impact, and scale what works. No bloated contracts. No months-long implementations. Just smart automation that delivers real time savings.
               </p>
             </div>
 
@@ -69,7 +69,7 @@ export default function About() {
                   <Target className="w-10 h-10 text-lime mb-4" />
                   <h3 className="font-bold text-navy mb-2">Real Results</h3>
                   <p className="text-gray-600 text-sm">
-                    We focus on measurable time savings and ROI—not buzzwords or vaporware.
+                    We focus on measurable time savings and ROI-not buzzwords or vaporware.
                   </p>
                 </Card>
               </div>

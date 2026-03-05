@@ -36,7 +36,7 @@ export function Hero() {
           </motion.h1>
 
           <motion.p variants={itemVariants} className="text-xl text-gray-300 mb-8 leading-relaxed">
-            Stop wasting time on repetitive tasks. We help local businesses in Montclair and Essex County automate the work that's slowing you down—so you can focus on what matters.
+            Stop wasting time on repetitive tasks. We help local businesses in Montclair and Essex County automate the work that's slowing you down-so you can focus on what matters.
           </motion.p>
 
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 mb-12">

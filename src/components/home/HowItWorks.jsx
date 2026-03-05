@@ -17,7 +17,7 @@ export function HowItWorks() {
     {
       number: '3',
       title: 'See Results',
-      description: 'Most teams see time savings in the first 2–4 weeks. We iterate based on feedback and help you scale what works.',
+      description: 'Most teams see time savings in the first 2-4 weeks. We iterate based on feedback and help you scale what works.',
     },
   ]
 
