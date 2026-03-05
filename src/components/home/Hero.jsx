@@ -32,14 +32,13 @@ export function Hero() {
 
           {/* Founder strip */}
           <motion.div custom={2} initial="hidden" animate="visible" variants={fadeUp}>
-            <div className="flex items-center gap-4 mb-8">
-              <div
-                className="w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-white text-sm"
-                style={{ background: '#0f2a4a', border: '2px solid rgba(255,255,255,0.3)' }}
-              >
-                AR
-              </div>
-              <p className="text-gray-300 italic text-base leading-snug">
+            <div className="flex items-center gap-3 mt-6 mb-8">
+              <img
+                src="https://aimontclair.com/lovable-uploads/9e5814cb-d745-4977-94cd-d278473bd69b.png"
+                alt="Andres Ravinet"
+                className="w-12 h-12 rounded-full object-cover ring-2 ring-brand/40 flex-shrink-0"
+              />
+              <p className="text-white/80 text-sm italic">
                 &ldquo;Hi, I&apos;m Andres &mdash; I&apos;ve helped Essex County businesses automate the repetitive work that&apos;s stealing their time. Let me show you what that looks like for yours.&rdquo;
               </p>
             </div>
@@ -79,6 +78,9 @@ export function Hero() {
                 Serving Montclair &middot; Bloomfield &middot; Glen Ridge &middot; Verona &middot; Essex County
               </p>
             </div>
+            <p className="text-white/50 text-xs mt-3">
+              Projects from $500 &middot; Free audit &middot; No commitment
+            </p>
           </motion.div>
         </div>
 

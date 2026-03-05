@@ -19,14 +19,15 @@ export default function About() {
           <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
             {/* Avatar */}
             <div className="flex flex-col items-center flex-shrink-0">
-              <div className="relative">
-                <div className="w-32 h-32 rounded-full bg-gradient-to-br from-brand to-[#0C8F8A] flex items-center justify-center shadow-xl ring-4 ring-brand/20">
-                  <span className="text-3xl font-bold text-white font-display">AR</span>
-                </div>
+              <div className="relative inline-block">
+                <img
+                  src="https://aimontclair.com/lovable-uploads/9e5814cb-d745-4977-94cd-d278473bd69b.png"
+                  alt="Andres Ravinet — AI Montclair"
+                  className="w-40 h-40 rounded-full object-cover shadow-xl ring-4 ring-brand/20"
+                />
                 <div className="absolute -bottom-2 -right-2 bg-white rounded-full p-2 shadow-lg">
                   <div className="w-4 h-4 rounded-full bg-brand animate-pulse" />
                 </div>
-                <p className="text-slate-400 text-sm text-center mt-3">[ Photo coming soon ]</p>
               </div>
             </div>
 
@@ -53,29 +54,29 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <div className="prose prose-lg max-w-none mb-16">
-              <h2 className="text-3xl font-bold font-display text-navy mb-6">The Story</h2>
+              <h2 className="text-3xl font-bold font-display text-navy mb-6">About Andres</h2>
               <p className="text-gray-700 text-lg leading-relaxed mb-5">
-                Andres Ravinet is a technology consultant and trainer based right here in Montclair, NJ.
-                Over the past several years he has worked with law firms, medical offices, retail shops,
-                and service businesses across Essex County &mdash; helping them replace manual, time-consuming
-                processes with smart automation that actually sticks.
+                Andres Ravinet is a Montclair resident, husband and dad, and a technologist with 20+ years building solutions for small and large organizations. After nearly a decade at Microsoft designing strategy and enterprise solutions, he now focuses on helping Montclair&apos;s small businesses and nonprofits save time with secure and straightforward AI automation.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-5">
-                After seeing enterprise organizations transform their operations with AI, Andres noticed
-                a gap: the small businesses on Main Street wanted the same tools, but everything built
-                for the Fortune 500 was too expensive, too complex, and too slow. So he built AI Montclair
-                to close that gap.
+                He dedicates discounted and pro-bono time each month to local nonprofits, and is committed to making AI accessible to all communities &mdash; not just those with enterprise budgets.
               </p>
-              <p className="text-gray-700 text-lg leading-relaxed mb-5">
-                Every project is fixed-price with no long-term contracts. Most go live in one to six weeks.
-                You work directly with Andres &mdash; no offshore teams, no account managers in the way.
-                Just a neighbor who knows your community and can get things done.
-              </p>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                His belief is simple: enterprise-grade automation should be accessible to Main Street,
-                not just Fortune 500. A two-person law firm deserves the same efficiency tools as a
-                hundred-person firm &mdash; built to fit their budget and their reality.
-              </p>
+            </div>
+
+            {/* Impact by Industry */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-10">
+              {[
+                { industry: 'Law Firms', stat: '5+ hrs/week', detail: '$1,000+/mo recaptured' },
+                { industry: 'Medical & Dental', stat: '1 appt/week', detail: 'No-shows eliminated' },
+                { industry: 'Real Estate', stat: 'More closings', detail: 'Fewer empty slots' },
+                { industry: 'Fitness & Wellness', stat: '$100s/mo', detail: 'Per retained member' },
+              ].map(item => (
+                <div key={item.industry} className="bg-slate-50 rounded-xl p-4 text-center border border-slate-100">
+                  <div className="text-brand font-bold text-lg font-display">{item.stat}</div>
+                  <div className="text-slate-500 text-xs mt-1">{item.detail}</div>
+                  <div className="text-slate-700 text-sm font-medium mt-2">{item.industry}</div>
+                </div>
+              ))}
             </div>
 
             {/* Why AI Montclair */}

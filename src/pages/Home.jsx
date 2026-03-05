@@ -2,8 +2,10 @@ import { useEffect } from 'react'
 import { Hero } from '../components/home/Hero'
 import { PainPoints } from '../components/home/PainPoints'
 import { Services } from '../components/home/Services'
+import { Integrations } from '../components/home/Integrations'
 import { SocialProof } from '../components/home/SocialProof'
 import { HowItWorks } from '../components/home/HowItWorks'
+import { Pricing } from '../components/home/Pricing'
 import { Industries } from '../components/home/Industries'
 import { FAQ } from '../components/home/FAQ'
 import { CTASection } from '../components/home/CTASection'
@@ -25,7 +27,9 @@ export default function Home() {
       <ScrollReveal><PainPoints /></ScrollReveal>
       <ScrollReveal delay={0.1}><Industries /></ScrollReveal>
       <ScrollReveal delay={0.1}><Services /></ScrollReveal>
+      <Integrations />
       <ScrollReveal><HowItWorks /></ScrollReveal>
+      <ScrollReveal><Pricing /></ScrollReveal>
       <ScrollReveal><SocialProof /></ScrollReveal>
       <ScrollReveal><InlineCTA /></ScrollReveal>
       <ScrollReveal><FAQ /></ScrollReveal>
@@ -33,3 +37,4 @@ export default function Home() {
     </>
   )
 }
+
