@@ -56,10 +56,10 @@ export function SocialProof() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
-            Real Results for NJ Businesses
+            Real Results. Real Montclair Businesses.
           </h2>
           <p className="text-gray-600 max-w-xl mx-auto">
-            Typical outcomes from AI automation projects with local small businesses.
+            See what happened when local businesses stopped losing hours to admin work.
           </p>
         </motion.div>
 

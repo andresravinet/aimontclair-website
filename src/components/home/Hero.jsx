@@ -26,7 +26,7 @@ export function Hero() {
 
           <motion.div custom={1} initial="hidden" animate="visible" variants={fadeUp}>
             <p className="text-xl text-gray-300 mb-6 leading-relaxed">
-              We build AI automation systems for local NJ businesses &mdash; so you stop losing hours to scheduling, follow-ups, and inbox management. No long-term contracts. No enterprise price tags. Live in weeks.
+              Drowning in scheduling chaos and admin work? We build AI automation systems for Montclair businesses so you <strong>stop losing leads and hours</strong> to repetitive tasks. You focus on your business. AI handles the rest. No long-term contracts. No enterprise price tags. Live in weeks.
             </p>
           </motion.div>
 
@@ -37,9 +37,10 @@ export function Hero() {
                 src="https://aimontclair.com/lovable-uploads/9e5814cb-d745-4977-94cd-d278473bd69b.png"
                 alt="Andres Ravinet"
                 className="w-12 h-12 rounded-full object-cover ring-2 ring-brand/40 flex-shrink-0"
+                loading="lazy"
               />
               <p className="text-white/80 text-sm italic">
-                &ldquo;Hi, I&apos;m Andres &mdash; I&apos;ve helped Essex County businesses automate the repetitive work that&apos;s stealing their time. Let me show you what that looks like for yours.&rdquo;
+                &ldquo;Hi, I\'m Andres &mdash; I\'ve helped Essex County businesses automate the repetitive work that\'s stealing their time. Let me show you what that looks like for yours.&rdquo;
               </p>
             </div>
           </motion.div>
@@ -60,16 +61,16 @@ export function Hero() {
             {/* Trust strip */}
             <div className="flex flex-wrap items-center gap-4 mt-6 text-white/70 text-sm">
               <span className="flex items-center gap-1.5">
-                <CheckCircle size={14} className="text-brand" /> Local to Montclair
+                <CheckCircle size={14} className="text-brand" /> ✓ Fixed Price Guarantee
               </span>
               <span className="flex items-center gap-1.5">
-                <CheckCircle size={14} className="text-brand" /> Fixed pricing
+                <CheckCircle size={14} className="text-brand" /> ✓ Local to Montclair
               </span>
               <span className="flex items-center gap-1.5">
-                <CheckCircle size={14} className="text-brand" /> Live in 1&ndash;6 weeks
+                <CheckCircle size={14} className="text-brand" /> ✓ Live in 1&ndash;6 weeks
               </span>
               <span className="flex items-center gap-1.5">
-                <CheckCircle size={14} className="text-brand" /> No contracts
+                <CheckCircle size={14} className="text-brand" /> ✓ No contracts
               </span>
             </div>
 

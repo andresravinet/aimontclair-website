@@ -15,18 +15,18 @@ export function PainPoints() {
   const points = [
     {
       icon: Clock,
-      title: 'Too Much Admin',
-      description: 'You spent 45 minutes yesterday playing phone tag to schedule a 20-minute appointment.',
+      title: 'Scheduling Chaos',
+      description: 'You spent 45 minutes yesterday playing phone tag to schedule a 20-minute appointment. Your customers are frustrated. You\'re exhausted.',
     },
     {
       icon: AlertCircle,
-      title: 'Missing Follow-ups',
-      description: "A hot lead contacted you Friday at 6 PM. By Monday morning, they'd already hired someone else.",
+      title: 'Losing Leads While You Sleep',
+      description: "That hot lead texted Friday at 6 PM. No one answered. By Monday, they hired a competitor. You\'ll never know.",
     },
     {
       icon: Zap,
-      title: 'Wasted Hours on Repetitive Work',
-      description: "You didn't start this business to answer the same 12 questions by email every week.",
+      title: 'Drowning in Repetitive Admin',
+      description: "You didn\'t start this business to answer the same 12 questions by email every week. But here you are. Stuck.",
     },
   ]
 
@@ -41,10 +41,10 @@ export function PainPoints() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Sound Familiar?
+            The Scheduling Chaos Stops Here
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Most small business owners face the same challenges. The good news: they&apos;re fixable.
+            Sound familiar? Every day you waste managing admin is a day you\'re not growing your business. We fix that.
           </p>
         </motion.div>
 
