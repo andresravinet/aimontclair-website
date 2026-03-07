@@ -12,6 +12,7 @@ import { FAQ } from '../components/home/FAQ'
 import { Testimonials } from '../components/home/Testimonials'
 import { CTASection } from '../components/home/CTASection'
 import { InlineCTA } from '../components/home/InlineCTA'
+import { AuditBanner } from '../components/home/AuditBanner'
 import { ScrollReveal } from '../components/ScrollReveal'
 
 export default function Home() {
@@ -127,6 +128,7 @@ export default function Home() {
       <ScrollReveal delay={0.1}><Testimonials /></ScrollReveal>
       <ScrollReveal><InlineCTA /></ScrollReveal>
       <ScrollReveal><FAQ /></ScrollReveal>
+      <AuditBanner />
       <ScrollReveal delay={0.1}><CTASection /></ScrollReveal>
     </>
   )

@@ -103,6 +103,12 @@ export function Header() {
 
           <Link to="/about" className={linkClass('/about')}>About</Link>
           <Link to="/contact" className={linkClass('/contact')}>Contact</Link>
+          <Link
+            to="/audit"
+            className="bg-accent hover:bg-accent-dark text-white font-semibold px-4 py-2 rounded-lg transition-colors text-sm whitespace-nowrap"
+          >
+            Free AI Audit
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -149,6 +155,13 @@ export function Header() {
 
               <Link to="/about" className={linkClass('/about')} onClick={() => setIsOpen(false)}>About</Link>
               <Link to="/contact" className={linkClass('/contact')} onClick={() => setIsOpen(false)}>Contact</Link>
+              <Link
+                to="/audit"
+                className="bg-accent hover:bg-accent-dark text-white font-semibold px-4 py-2 rounded-lg transition-colors text-sm text-center"
+                onClick={() => setIsOpen(false)}
+              >
+                Free AI Audit
+              </Link>
             </div>
           </div>
         )}
