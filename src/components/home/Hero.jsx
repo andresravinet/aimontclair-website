@@ -26,7 +26,7 @@ export function Hero() {
 
           <motion.div custom={1} initial="hidden" animate="visible" variants={fadeUp}>
             <p className="text-xl text-gray-300 mb-6 leading-relaxed">
-              Your team is drowning in scheduling, follow-ups, and admin work that doesn\'t require a human. AI automation fixes that. We build systems that save you hours every week without new hires. Live in 1-6 weeks. No contracts. One price.
+              Your team is drowning in scheduling, follow-ups, and admin work that doesn&apos;t require a human. AI automation fixes that. We build systems that save you hours every week without new hires. Live in 1-6 weeks. No contracts. One price.
             </p>
           </motion.div>
 
@@ -40,7 +40,7 @@ export function Hero() {
                 loading="lazy"
               />
               <p className="text-white/80 text-sm italic">
-                &ldquo;Hi, I\'m Andres &mdash; I\'ve helped Essex County businesses automate the repetitive work that\'s stealing their time. Let me show you what that looks like for yours.&rdquo;
+                &ldquo;Hi, I&apos;m Andres &mdash; I&apos;ve helped Essex County businesses automate the repetitive work that&apos;s stealing their time. Let me show you what that looks like for yours.&rdquo;
               </p>
             </div>
           </motion.div>
