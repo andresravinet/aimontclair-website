@@ -3,8 +3,8 @@ import { CheckCircle, ArrowRight } from 'lucide-react'
 export function Button({ children, href, variant = 'primary', icon: Icon = null, className = '', ...props }) {
   const baseStyles = 'px-6 py-3 font-600 rounded-lg transition-all duration-300 inline-flex items-center gap-2 justify-center text-center'
   const variants = {
-    primary: 'bg-brand text-white hover:bg-brand-dark shadow-lg hover:shadow-xl hover:-translate-y-0.5',
-    secondary: 'border-2 border-navy text-navy hover:bg-navy hover:text-white',
+    primary: 'bg-accent text-white hover:bg-accent-dark shadow-lg hover:shadow-xl hover:-translate-y-0.5',
+    secondary: 'border-2 border-brand text-brand hover:bg-brand hover:text-white',
     dark: 'bg-navy text-white hover:bg-slate-900',
   }
 

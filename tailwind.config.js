@@ -6,13 +6,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'navy': '#0F172A',
-        'lime': '#22C55E',
+        'navy': '#0a1628',
         'slate-light': '#F8FAFC',
         brand: {
-          DEFAULT: '#0EA5A0',
-          dark: '#0C8F8A',
-          light: '#E6F7F7',
+          DEFAULT: '#07689f',
+          dark: '#055580',
+          light: '#e8f4fb',
+        },
+        accent: {
+          DEFAULT: '#f59e0b',
+          dark: '#d97706',
+          light: '#fef3c7',
         },
       },
       fontFamily: {

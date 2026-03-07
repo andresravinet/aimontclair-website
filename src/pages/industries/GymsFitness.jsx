@@ -79,7 +79,7 @@ export default function GymsFitness() {
       <section className="bg-[#0a1628] text-white py-24 px-4">
         <div className="max-w-4xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <span className="inline-block bg-teal-500/20 text-teal-400 text-sm font-medium px-4 py-1.5 rounded-full mb-6 border border-teal-500/30">
+            <span className="inline-block bg-brand/20 text-brand text-sm font-medium px-4 py-1.5 rounded-full mb-6 border border-brand/30">
               Built for boutique studios, CrossFit boxes, personal trainers, and yoga studios
             </span>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
@@ -90,7 +90,7 @@ export default function GymsFitness() {
             </p>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-400 text-white font-semibold px-8 py-4 rounded-lg transition-colors text-lg"
+              className="inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-white font-semibold px-8 py-4 rounded-lg transition-colors text-lg"
             >
               Get My Free Studio Automation Audit <ArrowRight size={20} />
             </Link>
@@ -112,7 +112,7 @@ export default function GymsFitness() {
                 transition={{ delay: i * 0.1 }}
                 className="bg-slate-50 border border-slate-200 rounded-xl p-6"
               >
-                <pain.icon className="text-teal-500 mb-3" size={24} />
+                <pain.icon className="text-brand mb-3" size={24} />
                 <p className="text-slate-700 leading-relaxed">"{pain.text}"</p>
               </motion.div>
             ))}
@@ -134,9 +134,9 @@ export default function GymsFitness() {
                 >
                   <span className="text-white font-semibold text-lg">{cat.title}</span>
                   {openCategory === i ? (
-                    <ChevronUp className="text-teal-400" size={20} />
+                    <ChevronUp className="text-brand" size={20} />
                   ) : (
-                    <ChevronDown className="text-teal-400" size={20} />
+                    <ChevronDown className="text-brand" size={20} />
                   )}
                 </button>
                 {openCategory === i && (
@@ -144,7 +144,7 @@ export default function GymsFitness() {
                     <ul className="space-y-3">
                       {cat.items.map((item, j) => (
                         <li key={j} className="flex items-start gap-3 text-slate-300">
-                          <span className="text-teal-400 mt-0.5 flex-shrink-0">→</span>
+                          <span className="text-brand mt-0.5 flex-shrink-0">→</span>
                           {item}
                         </li>
                       ))}
@@ -174,9 +174,9 @@ export default function GymsFitness() {
                 They see a phone number. It's Sunday. They move on. By Monday morning they've already signed up somewhere else.
               </p>
             </div>
-            <div className="bg-teal-50 border border-teal-100 rounded-2xl p-8">
+            <div className="bg-brand-light border border-brand-light rounded-2xl p-8">
               <div className="flex items-center gap-3 mb-6">
-                <CheckCircle className="text-teal-500" size={24} />
+                <CheckCircle className="text-brand" size={24} />
                 <h3 className="text-xl font-bold text-slate-900">With Automation</h3>
               </div>
               <div className="space-y-3 text-slate-700">
@@ -203,7 +203,7 @@ export default function GymsFitness() {
                 transition={{ delay: i * 0.1 }}
                 className="text-center bg-slate-800 rounded-2xl p-8 border border-slate-700"
               >
-                <div className="text-4xl font-bold text-teal-400 mb-3">{r.stat}</div>
+                <div className="text-4xl font-bold text-brand mb-3">{r.stat}</div>
                 <p className="text-slate-300 text-sm leading-relaxed">{r.label}</p>
               </motion.div>
             ))}
@@ -232,7 +232,7 @@ export default function GymsFitness() {
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-400 text-white font-semibold px-8 py-4 rounded-lg transition-colors text-lg"
+            className="inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-white font-semibold px-8 py-4 rounded-lg transition-colors text-lg"
           >
             Get My Free Studio Automation Audit <ArrowRight size={20} />
           </Link>
@@ -244,14 +244,14 @@ export default function GymsFitness() {
         <div className="max-w-4xl mx-auto">
           <h3 className="text-xl font-semibold text-slate-900 mb-6">Related Services</h3>
           <div className="flex flex-wrap gap-4">
-            <Link to="/services/ai-chatbot" className="flex items-center gap-2 bg-slate-50 border border-slate-200 hover:border-teal-400 text-slate-700 px-5 py-3 rounded-lg transition-colors">
-              <Dumbbell size={18} className="text-teal-500" /> AI Chatbot for Signups
+            <Link to="/services/ai-chatbot" className="flex items-center gap-2 bg-slate-50 border border-slate-200 hover:border-brand text-slate-700 px-5 py-3 rounded-lg transition-colors">
+              <Dumbbell size={18} className="text-brand" /> AI Chatbot for Signups
             </Link>
-            <Link to="/services/scheduling-automation" className="flex items-center gap-2 bg-slate-50 border border-slate-200 hover:border-teal-400 text-slate-700 px-5 py-3 rounded-lg transition-colors">
-              <Clock size={18} className="text-teal-500" /> Scheduling Automation
+            <Link to="/services/scheduling-automation" className="flex items-center gap-2 bg-slate-50 border border-slate-200 hover:border-brand text-slate-700 px-5 py-3 rounded-lg transition-colors">
+              <Clock size={18} className="text-brand" /> Scheduling Automation
             </Link>
-            <Link to="/services/workflow-automation" className="flex items-center gap-2 bg-slate-50 border border-slate-200 hover:border-teal-400 text-slate-700 px-5 py-3 rounded-lg transition-colors">
-              <TrendingUp size={18} className="text-teal-500" /> Workflow Automation
+            <Link to="/services/workflow-automation" className="flex items-center gap-2 bg-slate-50 border border-slate-200 hover:border-brand text-slate-700 px-5 py-3 rounded-lg transition-colors">
+              <TrendingUp size={18} className="text-brand" /> Workflow Automation
             </Link>
           </div>
         </div>

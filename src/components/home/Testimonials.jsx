@@ -72,7 +72,7 @@ export function Testimonials() {
 
               {/* Author */}
               <div className="flex items-center gap-3 pt-4 border-t border-slate-200">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-brand to-[#0C8F8A] flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-brand to-brand-dark flex items-center justify-center flex-shrink-0">
                   <span className="text-white text-xs font-bold">{t.avatar}</span>
                 </div>
                 <div>

@@ -149,7 +149,7 @@ export default function Industries() {
                       <h2 className="text-3xl font-bold text-navy mb-3">{industry.title}</h2>
                       <p className="text-lg text-gray-600">{industry.description}</p>
                       {industry.href && (
-                        <Link to={industry.href} className="inline-flex items-center gap-1 mt-4 text-teal-600 font-semibold hover:text-teal-500 transition-colors">
+                        <Link to={industry.href} className="inline-flex items-center gap-1 mt-4 text-brand font-semibold hover:text-brand transition-colors">
                           See {industry.title} details →
                         </Link>
                       )}

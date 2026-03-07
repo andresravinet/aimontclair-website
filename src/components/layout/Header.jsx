@@ -50,8 +50,13 @@ export function Header() {
       }`}
     >
       <nav className="container-custom py-4 flex items-center justify-between">
-        <Link to="/" className={'text-2xl font-bold transition-colors ' + (scrolled ? 'text-white' : 'text-navy')}>
-          AI Montclair
+        <Link to="/" className="flex items-center">
+          <img
+            src="/logo.png"
+            alt="AI Montclair"
+            className="h-10 w-auto"
+            style={{ filter: scrolled ? 'brightness(0) invert(1)' : 'none' }}
+          />
         </Link>
 
         {/* Desktop Menu: Services > Industries > About > Contact */}
