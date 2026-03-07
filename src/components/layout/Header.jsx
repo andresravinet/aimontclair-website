@@ -54,7 +54,7 @@ export function Header() {
           AI Montclair
         </Link>
 
-        {/* Desktop Menu: Services > Industries > About > Contact */}
+        {/* Desktop Menu: Services > Industries > About > Contact > Free AI Audit */}
         <div className="hidden md:flex items-center gap-8">
           <Link to="/services" className={linkClass('/services')}>Services</Link>
 
@@ -99,6 +99,14 @@ export function Header() {
 
           <Link to="/about" className={linkClass('/about')}>About</Link>
           <Link to="/contact" className={linkClass('/contact')}>Contact</Link>
+          
+          {/* Free AI Audit CTA Button */}
+          <Link 
+            to="/audit" 
+            className="px-5 py-2.5 bg-brand text-white font-600 rounded-lg hover:bg-brand-dark transition-colors duration-300 text-sm"
+          >
+            Free AI Audit
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -110,7 +118,7 @@ export function Header() {
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
-        {/* Mobile Menu: Services > Industries > About > Contact */}
+        {/* Mobile Menu: Services > Industries > About > Contact > Free AI Audit */}
         {isOpen && (
           <div className={'absolute top-full left-0 right-0 border-b md:hidden ' + (scrolled ? 'bg-[#0D1B2A]/95 backdrop-blur-sm border-gray-700' : 'bg-white border-gray-100')}>
             <div className="container-custom py-4 flex flex-col gap-4">
@@ -145,6 +153,15 @@ export function Header() {
 
               <Link to="/about" className={linkClass('/about')} onClick={() => setIsOpen(false)}>About</Link>
               <Link to="/contact" className={linkClass('/contact')} onClick={() => setIsOpen(false)}>Contact</Link>
+              
+              {/* Mobile Free AI Audit Button */}
+              <Link 
+                to="/audit" 
+                className="px-5 py-2.5 bg-brand text-white font-600 rounded-lg hover:bg-brand-dark transition-colors duration-300 text-sm text-center"
+                onClick={() => setIsOpen(false)}
+              >
+                Free AI Audit
+              </Link>
             </div>
           </div>
         )}

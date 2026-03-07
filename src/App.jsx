@@ -7,6 +7,7 @@ import ServiceDetail from './pages/ServiceDetail'
 import Industries from './pages/Industries'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import AuditPage from './pages/AuditPage'
 import AIChatbot from './pages/services/AIChatbot'
 import SchedulingAutomation from './pages/services/SchedulingAutomation'
 import WorkflowAutomation from './pages/services/WorkflowAutomation'
@@ -40,6 +41,7 @@ function App() {
           <Route path="/industries/home-services" element={<HomeServices />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/audit" element={<AuditPage />} />
         </Routes>
       </main>
       <Footer />
