@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Card } from '../ui/Card'
-import { AlertCircle, Clock, Zap } from 'lucide-react'
+import { Clock, PhoneCall, MessageSquare, UserCheck } from 'lucide-react'
 
 const container = {
   hidden: {},
@@ -15,18 +15,23 @@ export function PainPoints() {
   const points = [
     {
       icon: Clock,
-      title: 'Scheduling Chaos',
-      description: 'You spent 45 minutes yesterday playing phone tag to schedule a 20-minute appointment. Your customers are frustrated. You\'re exhausted.',
+      title: 'The phone tag loop',
+      description: 'You spent 40 minutes yesterday moving one appointment. Your patients are frustrated. Your front desk is exhausted. And it happens again tomorrow.',
     },
     {
-      icon: AlertCircle,
-      title: 'Losing Leads While You Sleep',
-      description: "That hot lead texted Friday at 6 PM. No one answered. By Monday, they hired a competitor. You\'ll never know.",
+      icon: PhoneCall,
+      title: 'The 6 PM call you missed',
+      description: 'Someone needed a contractor Friday evening. You were finishing a job. By Monday they\'d already hired the other guy. This happens every week.',
     },
     {
-      icon: Zap,
-      title: 'Drowning in Repetitive Admin',
-      description: "You didn\'t start this business to answer the same 12 questions by email every week. But here you are. Stuck.",
+      icon: MessageSquare,
+      title: 'The same 12 questions, every day',
+      description: 'Do you take Delta Dental? What are your hours? Is there parking? Your staff answers these on the phone, in email, and in DMs. It\'s the same answer every time.',
+    },
+    {
+      icon: UserCheck,
+      title: 'The follow-up that never happened',
+      description: 'You did great work for that client six months ago. You meant to check in. You didn\'t. Now they\'re using someone else — not because they wanted to, but because the other guy followed up.',
     },
   ]
 
@@ -41,10 +46,10 @@ export function PainPoints() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            The Scheduling Chaos Stops Here
+            Sound familiar?
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Sound familiar? Every day you waste managing admin is a day you\'re not growing your business. We fix that.
+            These aren&apos;t signs of a struggling business. They&apos;re signs of a busy one that never had the right systems set up.
           </p>
         </motion.div>
 
@@ -53,7 +58,7 @@ export function PainPoints() {
           whileInView="visible"
           viewport={{ once: true, margin: '-40px' }}
           variants={container}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {points.map((point, idx) => {
             const Icon = point.icon
