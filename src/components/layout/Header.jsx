@@ -69,6 +69,8 @@ export function Header() {
 
   const navItems = [
     { label: 'Services', href: '/services' },
+    { label: 'About', href: '/about' },
+    { label: 'Contact', href: '/contact' },
   ]
 
   return (
@@ -86,21 +88,13 @@ export function Header() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              to={item.href}
-              className={`font-500 transition-colors ${
-                isActive(item.href)
-                  ? 'text-brand'
-                  : scrolled
-                  ? 'text-gray-300 hover:text-white'
-                  : 'text-gray-700 hover:text-navy'
-              }`}
-            >
-              {item.label}
-            </Link>
-          ))}
+          {/* Services */}
+          <Link
+            to="/services"
+            className={`font-500 transition-colors ${isActive('/services') ? 'text-brand' : scrolled ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-navy'}`}
+          >
+            Services
+          </Link>
 
           {/* Industries Dropdown — sits between Services and About */}
           <div
@@ -156,22 +150,9 @@ export function Header() {
             </div>
           </div>
 
-          {/* About + Contact — after Industries dropdown */}
-          {[{ label: 'About', href: '/about' }, { label: 'Contact', href: '/contact' }].map((item) => (
-            <Link
-              key={item.href}
-              to={item.href}
-              className={`font-500 transition-colors ${
-                isActive(item.href)
-                  ? 'text-brand'
-                  : scrolled
-                  ? 'text-gray-300 hover:text-white'
-                  : 'text-gray-700 hover:text-navy'
-              }`}
-            >
-              {item.label}
-            </Link>
-          ))}
+          {/* About + Contact */}
+          <Link to="/about" className={`font-500 transition-colors ${isActive('/about') ? 'text-brand' : scrolled ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-navy'}`}>About</Link>
+          <Link to="/contact" className={`font-500 transition-colors ${isActive('/contact') ? 'text-brand' : scrolled ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-navy'}`}>Contact</Link>
         </div>
 
         {/* Mobile Menu Button */}
