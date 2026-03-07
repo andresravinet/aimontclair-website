@@ -1,12 +1,14 @@
 import { useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { Card } from '../components/ui/Card'
-import { Scale, Stethoscope, Home, Dumbbell, ShoppingBag, UtensilsCrossed } from 'lucide-react'
+import { Scale, Stethoscope, Home, Dumbbell, ShoppingBag, UtensilsCrossed, Wrench } from 'lucide-react'
 
 const industries = [
   {
     icon: Scale,
     title: 'Law Firms',
+    href: '/industries/law-firms',
     description: 'Managing cases, client intake, and follow-ups takes time away from billable work.',
     useCases: [
       'Automate intake forms and collect information 24/7',
@@ -19,6 +21,7 @@ const industries = [
   {
     icon: Stethoscope,
     title: 'Medical & Dental Practices',
+    href: '/industries/medical-dental',
     description: 'Compliance, scheduling, and patient communication are critical and time-consuming.',
     useCases: [
       'HIPAA-compliant scheduling and reminders',
@@ -31,6 +34,7 @@ const industries = [
   {
     icon: Home,
     title: 'Real Estate',
+    href: '/industries/real-estate',
     description: 'Lead qualification and follow-up are the difference between closing deals and losing them.',
     useCases: [
       'Qualify leads with a custom chatbot',
@@ -43,6 +47,7 @@ const industries = [
   {
     icon: Dumbbell,
     title: 'Fitness & Wellness',
+    href: '/industries/gyms-fitness',
     description: 'Member onboarding, class scheduling, and retention are ongoing challenges.',
     useCases: [
       'Automate class bookings and cancellations',
@@ -53,20 +58,22 @@ const industries = [
     roi: 'Higher member retention, more class attendance',
   },
   {
-    icon: ShoppingBag,
-    title: 'Retail',
+    icon: Wrench,
+    title: 'Home Services',
+    href: '/industries/home-services',
     description: 'Customer service, inventory, and order tracking are labor-intensive.',
     useCases: [
-      'AI chatbot for product questions 24/7',
-      'Order tracking and status updates',
-      'Loyalty program automation',
-      'Abandoned cart recovery',
+      'Instant lead response while you\'re in the field',
+      'Automated scheduling and job reminders',
+      'Review generation after every completed job',
+      'Seasonal campaign automation',
     ],
-    roi: 'Higher customer satisfaction, repeat purchases',
+    roi: 'Win more jobs, get more 5-star reviews',
   },
   {
     icon: UtensilsCrossed,
     title: 'Restaurants',
+    href: '/industries/restaurants',
     description: 'Reservations, orders, and staffing are complex and error-prone.',
     useCases: [
       'Reservation booking and confirmations',
@@ -141,6 +148,11 @@ export default function Industries() {
                       <Icon className="w-14 h-14 text-brand mb-4" />
                       <h2 className="text-3xl font-bold text-navy mb-3">{industry.title}</h2>
                       <p className="text-lg text-gray-600">{industry.description}</p>
+                      {industry.href && (
+                        <Link to={industry.href} className="inline-flex items-center gap-1 mt-4 text-teal-600 font-semibold hover:text-teal-500 transition-colors">
+                          See {industry.title} details →
+                        </Link>
+                      )}
                     </div>
 
                     <Card className="lg:col-span-2 p-8">
