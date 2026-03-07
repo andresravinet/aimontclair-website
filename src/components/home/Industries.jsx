@@ -1,98 +1,73 @@
-import { motion } from 'framer-motion'
-import { Card } from '../ui/Card'
-import { Scale, Stethoscope, Home, Dumbbell, ShoppingBag, UtensilsCrossed } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { Briefcase, Heart, Home, Dumbbell, UtensilsCrossed, Wrench } from 'lucide-react'
+
+const industries = [
+  {
+    icon: Briefcase,
+    title: 'Law Firms',
+    hook: 'Less admin. More billable hours.',
+    href: '/industries/law-firms',
+  },
+  {
+    icon: Heart,
+    title: 'Medical & Dental',
+    hook: 'Your front desk, finally breathing.',
+    href: '/industries/medical-dental',
+  },
+  {
+    icon: Home,
+    title: 'Real Estate',
+    hook: 'Every lead responded to in minutes.',
+    href: '/industries/real-estate',
+  },
+  {
+    icon: Dumbbell,
+    title: 'Gyms & Fitness',
+    hook: 'Keep members. Stop chasing leads.',
+    href: '/industries/gyms-fitness',
+  },
+  {
+    icon: UtensilsCrossed,
+    title: 'Restaurants',
+    hook: 'More tables filled. Fewer calls answered.',
+    href: '/industries/restaurants',
+  },
+  {
+    icon: Wrench,
+    title: 'Home Services',
+    hook: 'Never miss a lead while you\'re on the job.',
+    href: '/industries/home-services',
+  },
+]
 
 export function Industries() {
-  const industries = [
-    {
-      icon: Scale,
-      title: 'Law Firms',
-      benefit: 'Automate intake, reduce no-shows, manage client follow-ups.',
-    },
-    {
-      icon: Stethoscope,
-      title: 'Medical & Dental',
-      benefit: 'HIPAA-conscious scheduling, appointment reminders, intake forms.',
-    },
-    {
-      icon: Home,
-      title: 'Real Estate',
-      benefit: 'Lead qualification, showing scheduling, pipeline automation.',
-    },
-    {
-      icon: Dumbbell,
-      title: 'Fitness & Wellness',
-      benefit: 'Member onboarding, class bookings, check-in automation.',
-    },
-    {
-      icon: ShoppingBag,
-      title: 'Retail',
-      benefit: 'Customer service chatbots, order tracking, loyalty workflows.',
-    },
-    {
-      icon: UtensilsCrossed,
-      title: 'Restaurants',
-      benefit: 'Reservation automation, order notifications, staffing workflows.',
-    },
-  ]
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.08,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.5 },
-    },
-  }
-
   return (
-    <section className="py-16 md:py-24">
+    <section className="bg-white py-20">
       <div className="container-custom">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-100px' }}
-          variants={containerVariants}
-          className="text-center mb-12"
-        >
-          <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-navy mb-4">
-            Industries We Serve
-          </motion.h2>
-          <motion.p variants={itemVariants} className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We work with small businesses across Montclair, Bloomfield, Glen Ridge, Verona, and Essex County.
-          </motion.p>
-        </motion.div>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">We Know Your Industry</h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Every business is different. Click your industry to see exactly what we'd automate for you.
+          </p>
+        </div>
 
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-100px' }}
-          variants={containerVariants}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-        >
-          {industries.map((industry, idx) => {
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {industries.map((industry) => {
             const Icon = industry.icon
             return (
-              <motion.div key={idx} variants={itemVariants}>
-                <Card>
-                  <Icon className="w-10 h-10 text-brand mb-4" />
-                  <h3 className="text-lg font-bold text-navy mb-2">{industry.title}</h3>
-                  <p className="text-gray-600 text-sm">{industry.benefit}</p>
-                </Card>
-              </motion.div>
+              <Link key={industry.href} to={industry.href}>
+                <div className="bg-white rounded-xl border border-slate-100 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-200 h-full flex flex-col">
+                  <div className="w-12 h-12 rounded-full bg-teal-50 flex items-center justify-center mb-4">
+                    <Icon className="w-6 h-6 text-teal-600" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-slate-900">{industry.title}</h3>
+                  <p className="text-sm text-slate-500 mt-1 flex-1">{industry.hook}</p>
+                  <span className="text-sm font-medium text-teal-600 mt-4">Learn more &rarr;</span>
+                </div>
+              </Link>
             )
           })}
-        </motion.div>
+        </div>
       </div>
     </section>
   )
