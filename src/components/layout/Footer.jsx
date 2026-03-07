@@ -51,24 +51,24 @@ export function Footer() {
             <h4 className="font-600 mb-4">Services</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <a href="/#services" className="hover:text-brand transition-colors">
+                <Link to="/services/ai-chatbot" className="hover:text-brand transition-colors">
                   AI Chatbots
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#services" className="hover:text-brand transition-colors">
+                <Link to="/services/scheduling-automation" className="hover:text-brand transition-colors">
                   Scheduling Automation
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#services" className="hover:text-brand transition-colors">
+                <Link to="/services/workflow-automation" className="hover:text-brand transition-colors">
                   Workflow Automation
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#services" className="hover:text-brand transition-colors">
+                <Link to="/services/ai-training" className="hover:text-brand transition-colors">
                   AI Training
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

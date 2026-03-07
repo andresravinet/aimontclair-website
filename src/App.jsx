@@ -7,6 +7,10 @@ import ServiceDetail from './pages/ServiceDetail'
 import Industries from './pages/Industries'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import AIChatbot from './pages/services/AIChatbot'
+import SchedulingAutomation from './pages/services/SchedulingAutomation'
+import WorkflowAutomation from './pages/services/WorkflowAutomation'
+import AITraining from './pages/services/AITraining'
 
 function App() {
   return (
@@ -16,6 +20,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/ai-chatbot" element={<AIChatbot />} />
+          <Route path="/services/scheduling-automation" element={<SchedulingAutomation />} />
+          <Route path="/services/workflow-automation" element={<WorkflowAutomation />} />
+          <Route path="/services/ai-training" element={<AITraining />} />
           <Route path="/services/:service" element={<ServiceDetail />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/about" element={<About />} />

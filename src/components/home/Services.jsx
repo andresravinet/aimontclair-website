@@ -21,7 +21,7 @@ export function Services() {
       description: 'We build branded assistants that greet visitors on your website and social channels, answer common questions, qualify leads, and book appointments hands-free. Assistants are trained on your policies, pricing, and tone. Your website answers questions and books consultations while you\'re closed. No staff required.',
     },
     {
-      slug: 'scheduling',
+      slug: 'scheduling-automation',
       icon: Calendar,
       title: 'Scheduling Automation',
       description: "We'll map your current process, then add the right nudges so clients show up and staff waste less time. Tailored automations to your stack and industry. No more phone tag. Clients book, reschedule, and get reminders automatically.",
