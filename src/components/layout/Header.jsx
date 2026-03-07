@@ -54,7 +54,7 @@ export function Header() {
           <img
             src={scrolled ? '/logo-white.png' : '/logo-dark.png'}
             alt="AI Montclair"
-            className="h-8 w-auto"
+            className="h-10 w-auto"
           />
         </Link>
 
