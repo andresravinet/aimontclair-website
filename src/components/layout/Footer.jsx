@@ -75,7 +75,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-600 mb-4">Contact</h4>
+            <h4 className="font-600 mb-4">Contact & Social</h4>
             <ul className="space-y-3 text-gray-400 text-sm">
               <li className="flex items-start gap-2">
                 <Mail size={16} className="mt-0.5 flex-shrink-0" />
@@ -86,6 +86,11 @@ export function Footer() {
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="mt-0.5 flex-shrink-0" />
                 <span>Montclair, NJ 07043</span>
+              </li>
+              <li>
+                <a href="https://www.google.com/maps/search/AI+Montclair+Montclair+NJ" target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors">
+                  Find us on Google Maps
+                </a>
               </li>
             </ul>
           </div>

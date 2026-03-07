@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Hero } from '../components/home/Hero'
 import { PainPoints } from '../components/home/PainPoints'
 import { Services } from '../components/home/Services'
+import { Results } from '../components/home/Results'
 import { Integrations } from '../components/home/Integrations'
 import { SocialProof } from '../components/home/SocialProof'
 import { HowItWorks } from '../components/home/HowItWorks'
@@ -118,6 +119,7 @@ export default function Home() {
       <ScrollReveal><PainPoints /></ScrollReveal>
       <ScrollReveal delay={0.1}><Industries /></ScrollReveal>
       <ScrollReveal delay={0.1}><Services /></ScrollReveal>
+      <ScrollReveal><Results /></ScrollReveal>
       <Integrations />
       <ScrollReveal><HowItWorks /></ScrollReveal>
       <ScrollReveal><Pricing /></ScrollReveal>

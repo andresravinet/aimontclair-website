@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { CheckCircle } from 'lucide-react'
+import { CheckCircle, ArrowRight, ArrowDown } from 'lucide-react'
 import { Button } from '../ui/Button'
 import { HeroStatsCard } from './HeroStatsCard'
 
@@ -20,13 +20,13 @@ export function Hero() {
         <div>
           <motion.div custom={0} initial="hidden" animate="visible" variants={fadeUp}>
             <h1 className="text-4xl md:text-6xl font-bold font-display mb-6 leading-tight">
-              Your Montclair Business, Running on Autopilot
+              Stop Wasting 10+ Hours a Week on Repetitive Tasks
             </h1>
           </motion.div>
 
           <motion.div custom={1} initial="hidden" animate="visible" variants={fadeUp}>
             <p className="text-xl text-gray-300 mb-6 leading-relaxed">
-              Drowning in scheduling chaos and admin work? We build AI automation systems for Montclair businesses so you <strong>stop losing leads and hours</strong> to repetitive tasks. You focus on your business. AI handles the rest. No long-term contracts. No enterprise price tags. Live in weeks.
+              Your team is drowning in scheduling, follow-ups, and admin work that doesn\'t require a human. AI automation fixes that. We build systems that save you hours every week without new hires. Live in 1-6 weeks. No contracts. One price.
             </p>
           </motion.div>
 
@@ -47,14 +47,15 @@ export function Hero() {
 
           <motion.div custom={3} initial="hidden" animate="visible" variants={fadeUp}>
             <div className="flex flex-col sm:flex-row gap-4 mb-4 items-center">
-              <Button href="/contact" variant="primary">
+              <Button href="/contact" variant="primary" icon={ArrowRight}>
                 Get My Free Automation Audit
               </Button>
               <a
                 href="#how-it-works"
-                className="text-gray-300 hover:text-white transition-colors text-base flex items-center gap-1 underline underline-offset-2"
+                className="text-gray-300 hover:text-white transition-colors text-base flex items-center gap-2 underline underline-offset-2"
               >
-                See a real example &#8595;
+                See how it works
+                <ArrowDown size={16} />
               </a>
             </div>
 
@@ -74,9 +75,14 @@ export function Hero() {
               </span>
             </div>
 
-            <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4 inline-block mt-6">
+            <div className="bg-brand/20 backdrop-blur-sm rounded-lg p-4 inline-block mt-6 border border-brand/40">
+              <p className="text-sm font-600 text-white">
+                ✓ Serving Montclair, NJ and Essex County (15-mile radius)
+              </p>
+            </div>
+            <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4 inline-block mt-3">
               <p className="text-sm font-500">
-                Serving Montclair &middot; Bloomfield &middot; Glen Ridge &middot; Verona &middot; Essex County
+                Montclair &middot; Bloomfield &middot; Glen Ridge &middot; Verona &middot; Essex County
               </p>
             </div>
             <p className="text-white/50 text-xs mt-3">

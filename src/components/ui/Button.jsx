@@ -1,7 +1,9 @@
-export function Button({ children, href, variant = 'primary', className = '', ...props }) {
-  const baseStyles = 'px-6 py-3 font-600 rounded-lg transition-all duration-300 inline-block text-center'
+import { CheckCircle, ArrowRight } from 'lucide-react'
+
+export function Button({ children, href, variant = 'primary', icon: Icon = null, className = '', ...props }) {
+  const baseStyles = 'px-6 py-3 font-600 rounded-lg transition-all duration-300 inline-flex items-center gap-2 justify-center text-center'
   const variants = {
-    primary: 'bg-brand text-white hover:bg-brand-dark',
+    primary: 'bg-brand text-white hover:bg-brand-dark shadow-lg hover:shadow-xl hover:-translate-y-0.5',
     secondary: 'border-2 border-navy text-navy hover:bg-navy hover:text-white',
     dark: 'bg-navy text-white hover:bg-slate-900',
   }
@@ -12,6 +14,7 @@ export function Button({ children, href, variant = 'primary', className = '', ..
     return (
       <a href={href} className={classes} {...props}>
         {children}
+        {Icon && <Icon size={18} />}
       </a>
     )
   }
@@ -19,6 +22,7 @@ export function Button({ children, href, variant = 'primary', className = '', ..
   return (
     <button className={classes} {...props}>
       {children}
+      {Icon && <Icon size={18} />}
     </button>
   )
 }

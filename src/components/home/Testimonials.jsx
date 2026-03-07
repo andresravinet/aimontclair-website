@@ -67,7 +67,7 @@ export function Testimonials() {
 
               {/* Result badge */}
               <div className="inline-flex items-center gap-2 bg-brand/10 text-brand text-xs font-semibold px-3 py-1.5 rounded-full mb-6 self-start">
-                &#10003; {t.result}
+                ✓ {t.result}
               </div>
 
               {/* Author */}
