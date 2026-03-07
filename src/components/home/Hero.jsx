@@ -20,13 +20,13 @@ export function Hero() {
         <div>
           <motion.div custom={0} initial="hidden" animate="visible" variants={fadeUp}>
             <h1 className="text-4xl md:text-6xl font-bold font-display mb-6 leading-tight">
-              Stop Wasting 10+ Hours a Week on Repetitive Tasks
+              Your Team Does More. Without Hiring Anyone.
             </h1>
           </motion.div>
 
           <motion.div custom={1} initial="hidden" animate="visible" variants={fadeUp}>
             <p className="text-xl text-gray-300 mb-6 leading-relaxed">
-              Your team is drowning in scheduling, follow-ups, and admin work that doesn&apos;t require a human. AI automation fixes that. We build systems that save you hours every week without new hires. Live in 1-6 weeks. No contracts. One price.
+              Your receptionist stops drowning. Your leads get answered in 60 seconds. Your proposals go out same-day. AI amplifies what your team already does best, so they can focus on what matters. No new hires. No complexity. Just time back.
             </p>
           </motion.div>
 
@@ -40,15 +40,15 @@ export function Hero() {
                 loading="lazy"
               />
               <p className="text-white/80 text-sm italic">
-                &ldquo;Hi, I&apos;m Andres &mdash; I&apos;ve helped Essex County businesses automate the repetitive work that&apos;s stealing their time. Let me show you what that looks like for yours.&rdquo;
+                &ldquo;Hi, I&apos;m Andres &mdash; I&apos;ve helped Essex County businesses amplify their teams with AI. Most owners are sitting on 5-10 hours a week of work that can be automated. Let&apos;s find yours.&rdquo;
               </p>
             </div>
           </motion.div>
 
           <motion.div custom={3} initial="hidden" animate="visible" variants={fadeUp}>
             <div className="flex flex-col sm:flex-row gap-4 mb-4 items-center">
-              <Button href="/contact" variant="primary" icon={ArrowRight}>
-                Get My Free Automation Audit
+              <Button href="/audit" variant="primary" icon={ArrowRight}>
+                Get Your Free AI Audit
               </Button>
               <a
                 href="#how-it-works"
