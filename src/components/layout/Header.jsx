@@ -68,10 +68,7 @@ export function Header() {
   }, [])
 
   const navItems = [
-    { label: 'Home', href: '/' },
     { label: 'Services', href: '/services' },
-    { label: 'About', href: '/about' },
-    { label: 'Contact', href: '/contact' },
   ]
 
   return (
@@ -105,7 +102,7 @@ export function Header() {
             </Link>
           ))}
 
-          {/* Industries Dropdown */}
+          {/* Industries Dropdown — sits between Services and About */}
           <div
             className="relative"
             ref={dropdownRef}
@@ -158,6 +155,23 @@ export function Header() {
               </div>
             </div>
           </div>
+
+          {/* About + Contact — after Industries dropdown */}
+          {[{ label: 'About', href: '/about' }, { label: 'Contact', href: '/contact' }].map((item) => (
+            <Link
+              key={item.href}
+              to={item.href}
+              className={`font-500 transition-colors ${
+                isActive(item.href)
+                  ? 'text-brand'
+                  : scrolled
+                  ? 'text-gray-300 hover:text-white'
+                  : 'text-gray-700 hover:text-navy'
+              }`}
+            >
+              {item.label}
+            </Link>
+          ))}
         </div>
 
         {/* Mobile Menu Button */}
