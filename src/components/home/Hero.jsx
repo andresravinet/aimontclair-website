@@ -33,7 +33,7 @@ export function Hero() {
           <motion.div custom={2} initial="hidden" animate="visible" variants={fadeUp}>
             <div className="flex items-start gap-3 mt-6 mb-8">
               <img
-                src="https://aimontclair.com/lovable-uploads/9e5814cb-d745-4977-94cd-d278473bd69b.png"
+                src="/andres-headshot.png"
                 alt="Andres Ravinet"
                 className="w-12 h-12 rounded-full object-cover ring-2 ring-brand/40 flex-shrink-0"
                 loading="lazy"

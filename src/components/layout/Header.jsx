@@ -52,9 +52,9 @@ export function Header() {
       <nav className="container-custom py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center">
           <img
-            src={scrolled ? '/logo-white.png' : '/logo-dark.png'}
+            src={scrolled ? '/logo-vector-white.svg' : '/logo-vector.svg'}
             alt="AI Montclair"
-            className="h-10 w-auto"
+            className="h-9 w-auto"
           />
         </Link>
 

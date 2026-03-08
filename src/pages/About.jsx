@@ -16,27 +16,26 @@ export default function About() {
       {/* Hero */}
       <section className="gradient-navy-to-slate text-white py-16 md:py-28">
         <div className="container-custom">
-          <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
-            {/* Avatar */}
-            <div className="flex flex-col items-center flex-shrink-0">
-              <div className="relative inline-block">
-                <img
-                  src="https://aimontclair.com/lovable-uploads/9e5814cb-d745-4977-94cd-d278473bd69b.png"
-                  alt="Andres Ravinet — AI Montclair"
-                  className="w-40 h-40 rounded-full object-cover shadow-xl ring-4 ring-brand/20"
-                />
-                <div className="absolute -bottom-2 -right-2 bg-white rounded-full p-2 shadow-lg">
-                  <div className="w-4 h-4 rounded-full bg-brand animate-pulse" />
-                </div>
-              </div>
-            </div>
-
-            {/* Intro */}
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold font-display mb-3">{"I'm Andres. I live here too."}</h1>
-              <p className="text-lg text-gray-300 max-w-2xl leading-relaxed">
+          <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
+            {/* Text */}
+            <div className="flex-1 order-2 md:order-1">
+              <h1 className="text-4xl md:text-5xl font-bold font-display mb-4">{"I'm Andres. I live here too."}</h1>
+              <p className="text-lg text-gray-300 max-w-xl leading-relaxed">
                 AI Montclair isn&apos;t an agency. It&apos;s me &mdash; a Montclair resident who spent years in tech and decided to put that to work for the businesses I walk past every day.
               </p>
+            </div>
+            {/* Photo */}
+            <div className="flex-shrink-0 order-1 md:order-2">
+              <div className="relative">
+                <img
+                  src="/andres-headshot.png"
+                  alt="Andres Ravinet — AI Montclair"
+                  className="w-64 md:w-80 rounded-2xl object-cover shadow-2xl ring-4 ring-brand/30"
+                />
+                <div className="absolute -bottom-3 -left-3 bg-accent text-white text-sm font-semibold px-4 py-2 rounded-lg shadow-lg">
+                  📍 Montclair, NJ
+                </div>
+              </div>
             </div>
           </div>
         </div>
