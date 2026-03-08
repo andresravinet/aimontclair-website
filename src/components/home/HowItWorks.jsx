@@ -41,7 +41,7 @@ export function HowItWorks() {
   }
 
   return (
-    <section id="how-it-works" className="py-16 md:py-24 bg-slate-light">
+    <section id="how-it-works" className="py-16 md:py-24 bg-[#F5F0E8]">
       <div className="container-custom">
         <motion.div
           initial="hidden"
@@ -53,7 +53,7 @@ export function HowItWorks() {
           <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-navy mb-4">
             How It Works
           </motion.h2>
-          <motion.p variants={itemVariants} className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <motion.p variants={itemVariants} className="text-lg text-slate-600 max-w-2xl mx-auto">
             Three simple steps to transform your business.
           </motion.p>
         </motion.div>

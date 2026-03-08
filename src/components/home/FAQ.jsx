@@ -52,7 +52,7 @@ export function FAQ() {
   }
 
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 md:py-24 bg-canvas grain-overlay">
       <div className="container-custom max-w-3xl">
         <motion.div
           initial="hidden"
@@ -61,7 +61,7 @@ export function FAQ() {
           variants={containerVariants}
           className="text-center mb-12"
         >
-          <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-navy mb-4">
+          <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-cream mb-4">
             Frequently Asked Questions
           </motion.h2>
         </motion.div>
@@ -77,11 +77,11 @@ export function FAQ() {
             <motion.div key={idx} variants={itemVariants}>
               <button
                 onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
-                className="w-full bg-white rounded-lg card-shadow p-6 flex items-center justify-between hover:card-hover transition-all text-left"
+                className="w-full bg-white/5 border border-white/10 rounded-lg p-6 flex items-center justify-between hover:bg-white/10 transition-all text-left"
               >
-                <span className="font-600 text-navy text-lg">{faq.q}</span>
+                <span className="font-600 text-cream text-lg">{faq.q}</span>
                 <ChevronDown
-                  className={`w-5 h-5 text-brand flex-shrink-0 transition-transform ${
+                  className={`w-5 h-5 text-accent flex-shrink-0 transition-transform ${
                     openIdx === idx ? 'rotate-180' : ''
                   }`}
                 />
@@ -92,9 +92,9 @@ export function FAQ() {
                   animate={{ opacity: 1, height: 'auto' }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="bg-gray-50 rounded-lg p-6 mt-0 border border-gray-100 border-t-0"
+                  className="bg-white/5 rounded-lg p-6 mt-0 border border-white/10 border-t-0"
                 >
-                  <p className="text-gray-700">{faq.a}</p>
+                  <p className="text-cream-muted">{faq.a}</p>
                 </motion.div>
               )}
             </motion.div>

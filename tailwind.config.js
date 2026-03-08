@@ -6,8 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'navy': '#0a1628',
-        'slate-light': '#F8FAFC',
+        canvas: '#0D0F12',
+        cream: '#EDE8DC',
+        'cream-muted': '#A89F8C',
         brand: {
           DEFAULT: '#07689f',
           dark: '#055580',
@@ -18,6 +19,7 @@ module.exports = {
           dark: '#d97706',
           light: '#fef3c7',
         },
+        navy: '#0a1628',
       },
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],

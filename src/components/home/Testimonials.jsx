@@ -35,10 +35,10 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-[#F5F0E8]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold font-display text-navy mb-4">
             What Clients Are Saying
           </h2>
           <p className="text-lg text-slate-500">
@@ -50,7 +50,7 @@ export function Testimonials() {
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200 flex flex-col"
+              className="bg-white border border-slate-100 rounded-xl shadow-sm p-8 hover:shadow-lg hover:-translate-y-1 transition-all duration-200 flex flex-col"
             >
               {/* Stars */}
               <div className="flex gap-1 mb-4">

@@ -23,7 +23,7 @@ export function Header() {
 
   const linkClass = (path) =>
     'font-500 transition-colors ' +
-    (isActive(path) ? 'text-brand' : scrolled ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-navy')
+    (isActive(path) ? 'text-accent' : 'text-cream/70 hover:text-cream')
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 60)
@@ -45,14 +45,14 @@ export function Header() {
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#0D1B2A]/95 backdrop-blur-sm shadow-lg border-b border-transparent'
-          : 'bg-white border-b border-gray-100 card-shadow'
+          ? 'bg-canvas/95 backdrop-blur-md border-b border-cream/10'
+          : 'bg-canvas/80 backdrop-blur-md border-b border-cream/5'
       }`}
     >
       <nav className="container-custom py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center">
           <img
-            src={scrolled ? '/logo-vector-white.svg' : '/logo-vector.svg'}
+            src="/logo-vector-white.svg"
             alt="AI Montclair"
             className="h-9 w-auto"
           />
@@ -66,7 +66,7 @@ export function Header() {
           <div className="relative" ref={dropdownRef} onMouseEnter={() => setIndustriesOpen(true)} onMouseLeave={() => setIndustriesOpen(false)}>
             <button
               className={'flex items-center gap-1 font-500 transition-colors ' +
-                (location.pathname.startsWith('/industries') ? 'text-brand' : scrolled ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-navy')}
+                (location.pathname.startsWith('/industries') ? 'text-accent' : 'text-cream/70 hover:text-cream')}
               onClick={() => setIndustriesOpen((v) => !v)}
               aria-haspopup="true"
               aria-expanded={industriesOpen}
@@ -113,7 +113,7 @@ export function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className={'md:hidden p-2 transition-colors ' + (scrolled ? 'text-white' : 'text-navy')}
+          className="md:hidden p-2 transition-colors text-cream"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
@@ -122,7 +122,7 @@ export function Header() {
 
         {/* Mobile Menu: Services > Industries > About > Contact */}
         {isOpen && (
-          <div className={'absolute top-full left-0 right-0 border-b md:hidden ' + (scrolled ? 'bg-[#0D1B2A]/95 backdrop-blur-sm border-gray-700' : 'bg-white border-gray-100')}>
+          <div className="absolute top-full left-0 right-0 border-b md:hidden bg-canvas/95 backdrop-blur-md border-cream/10">
             <div className="container-custom py-4 flex flex-col gap-4">
               <Link to="/services" className={linkClass('/services')} onClick={() => setIsOpen(false)}>Services</Link>
 
@@ -130,7 +130,7 @@ export function Header() {
               <div>
                 <button
                   className={'flex items-center gap-1 font-500 transition-colors w-full text-left ' +
-                    (location.pathname.startsWith('/industries') ? 'text-brand' : scrolled ? 'text-gray-300' : 'text-gray-700')}
+                    (location.pathname.startsWith('/industries') ? 'text-accent' : 'text-cream/70')}
                   onClick={() => setMobileIndustriesOpen((v) => !v)}
                 >
                   Industries
@@ -142,7 +142,7 @@ export function Header() {
                       <Link
                         key={item.href}
                         to={item.href}
-                        className={'flex items-center gap-2 text-sm transition-colors ' + (scrolled ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-navy')}
+                        className="flex items-center gap-2 text-sm transition-colors text-cream/70 hover:text-cream"
                         onClick={() => { setIsOpen(false); setMobileIndustriesOpen(false) }}
                       >
                         <span>{item.emoji}</span>

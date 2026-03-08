@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, ArrowDown } from 'lucide-react'
-import { Button } from '../ui/Button'
+import { ArrowRight } from 'lucide-react'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -13,64 +12,108 @@ const fadeUp = {
 
 export function Hero() {
   return (
-    <section className="gradient-navy-to-slate text-white py-20 md:py-32">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh] py-20">
-        {/* LEFT COLUMN */}
-        <div>
-          <motion.div custom={0} initial="hidden" animate="visible" variants={fadeUp}>
-            <h1 className="text-4xl md:text-6xl font-bold font-display mb-6 leading-tight">
-              Your neighbor who builds the systems.
-            </h1>
-          </motion.div>
+    <section className="bg-canvas grain-overlay min-h-screen flex items-center overflow-hidden relative">
+      {/* MONTCLAIR watermark */}
+      <span
+        className="absolute bottom-[-20px] right-0 pointer-events-none select-none text-cream z-0"
+        style={{
+          fontSize: 'clamp(80px, 15vw, 200px)',
+          opacity: 0.04,
+          letterSpacing: '0.05em',
+          lineHeight: 1,
+          fontFamily: 'Sora, system-ui, sans-serif',
+          fontWeight: 800,
+        }}
+      >
+        MONTCLAIR
+      </span>
 
-          <motion.div custom={1} initial="hidden" animate="visible" variants={fadeUp}>
-            <p className="text-xl text-gray-300 mb-6 leading-relaxed">
-              I live in Montclair. I help local businesses &mdash; dental offices, law firms, contractors, restaurants &mdash; run the parts of their operation that don&apos;t need a human anymore.
-            </p>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid grid-cols-1 lg:grid-cols-[55%_45%] gap-0 items-center py-20 relative z-10">
+        {/* LEFT COLUMN */}
+        <div className="pr-0 lg:pr-12">
+          {/* Eyebrow */}
+          <motion.p
+            custom={0}
+            initial="hidden"
+            animate="visible"
+            variants={fadeUp}
+            className="text-xs tracking-[0.2em] uppercase text-accent font-semibold mb-6"
+          >
+            AI Montclair — Montclair, NJ
+          </motion.p>
+
+          {/* Massive headline */}
+          <motion.h1
+            custom={1}
+            initial="hidden"
+            animate="visible"
+            variants={fadeUp}
+            className="text-cream font-display font-bold leading-[0.95] mb-6"
+            style={{ fontSize: 'clamp(64px, 9vw, 120px)' }}
+          >
+            Your neighbor<br />
+            who builds the<br />
+            systems.
+          </motion.h1>
+
+          {/* Subheadline */}
+          <motion.p
+            custom={2}
+            initial="hidden"
+            animate="visible"
+            variants={fadeUp}
+            className="text-cream-muted text-lg md:text-xl max-w-md mb-8 leading-relaxed"
+          >
+            Montclair small businesses run better when their
+            back office runs itself. I build that.
+          </motion.p>
+
+          {/* CTA button */}
+          <motion.div custom={3} initial="hidden" animate="visible" variants={fadeUp}>
+            <a
+              href="/audit"
+              className="inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-base mb-8"
+            >
+              Get My Free AI Audit
+              <ArrowRight size={18} />
+            </a>
           </motion.div>
 
           {/* Founder strip */}
-          <motion.div custom={2} initial="hidden" animate="visible" variants={fadeUp}>
-            <div className="flex items-start gap-3 mt-6 mb-8">
-              <img
-                src="/andres-headshot.png"
-                alt="Andres Ravinet"
-                className="w-12 h-12 rounded-full object-cover ring-2 ring-brand/40 flex-shrink-0"
-                loading="lazy"
-              />
-              <p className="text-white/80 text-sm italic">
-                &ldquo;A dental office near me had a full waiting list and a front desk spending half the day on the phone managing appointments. Not because they were bad at their jobs &mdash; no one had ever set up a better way. We fixed it in two weeks.&rdquo;
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div custom={3} initial="hidden" animate="visible" variants={fadeUp}>
-            <div className="flex flex-col sm:flex-row gap-4 mb-4 items-center">
-              <Button href="/contact" variant="primary" icon={ArrowRight}>
-                Get My Free Automation Audit
-              </Button>
-              <a
-                href="#how-it-works"
-                className="text-gray-300 hover:text-white transition-colors text-base flex items-center gap-2 underline underline-offset-2"
-              >
-                See how it works
-                <ArrowDown size={16} />
-              </a>
-            </div>
-
-            <div className="bg-brand/20 backdrop-blur-sm rounded-lg p-4 inline-block mt-6 border border-brand/40">
-              <p className="text-sm font-600 text-white">
-                Serving Montclair, Glen Ridge, Verona, Bloomfield, and the greater Essex County area
-              </p>
-            </div>
-            <p className="text-white/50 text-xs mt-3">
-              Projects from $500 &middot; Free audit &middot; No commitment
+          <motion.div
+            custom={4}
+            initial="hidden"
+            animate="visible"
+            variants={fadeUp}
+            className="flex items-start gap-3"
+          >
+            <img
+              src="/andres-headshot.png"
+              alt="Andres Ravinet"
+              className="w-12 h-12 rounded-full object-cover ring-2 ring-accent/40 flex-shrink-0"
+              loading="lazy"
+            />
+            <p className="text-cream-muted text-sm italic leading-relaxed">
+              &ldquo;A dental office near me had a full waiting list and a front desk spending half the day on the phone managing appointments. We fixed it in two weeks.&rdquo;
             </p>
           </motion.div>
         </div>
 
-        {/* RIGHT COLUMN — empty on purpose to keep layout */}
-        <div className="hidden lg:flex items-center justify-center" />
+        {/* RIGHT COLUMN — headshot bleeding off right edge */}
+        <div className="hidden lg:block relative h-[600px] overflow-hidden">
+          <motion.img
+            src="/andres-headshot.png"
+            alt="Andres Ravinet — AI Montclair"
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.4, duration: 0.7, ease: 'easeOut' }}
+            className="absolute inset-y-0 left-0 h-full w-auto object-cover object-top rounded-l-2xl"
+            style={{
+              filter: 'saturate(0.85) contrast(1.1)',
+              maxWidth: 'none',
+            }}
+          />
+        </div>
       </div>
     </section>
   )
