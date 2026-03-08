@@ -16,22 +16,22 @@ export function PainPoints() {
     {
       icon: Clock,
       title: 'The phone tag loop',
-      description: 'You spent 40 minutes yesterday moving one appointment. Your patients are frustrated. Your front desk is exhausted. And it happens again tomorrow.',
+      description: 'Admin chaos eating your day. You spent 40 minutes yesterday moving one appointment. Your patients are frustrated. Your front desk is exhausted. And it happens again tomorrow.',
     },
     {
       icon: PhoneCall,
-      title: 'The 6 PM call you missed',
-      description: 'Someone needed a contractor Friday evening. You were finishing a job. By Monday they\'d already hired the other guy. This happens every week.',
+      title: 'Losing valuable leads after hours',
+      description: 'Someone needed a contractor Friday evening. You were finishing a job. By Monday they\'d already hired someone else. This happens every week — and costs you real money.',
     },
     {
       icon: MessageSquare,
-      title: 'The same 12 questions, every day',
-      description: 'Do you take Delta Dental? What are your hours? Is there parking? Your staff answers these on the phone, in email, and in DMs. It\'s the same answer every time.',
+      title: 'Your team drowning in repetitive work',
+      description: 'Do you take Delta Dental? What are your hours? Is there parking? Your staff answers these same 12 questions every single day. On phone, email, DMs. It\'s never-ending.',
     },
     {
       icon: UserCheck,
       title: 'The follow-up that never happened',
-      description: 'You did great work for that client six months ago. You meant to check in. You didn\'t. Now they\'re using someone else — not because they wanted to, but because the other guy followed up.',
+      description: 'You did great work for that client six months ago. You meant to check in. You didn\'t. Now they\'re using someone else — not because they wanted to, but because the other guy actually followed up.',
     },
   ]
 
@@ -46,10 +46,10 @@ export function PainPoints() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Sound familiar?
+            Feeling Overwhelmed? You\'re Not Alone.
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            These aren&apos;t signs of a struggling business. They&apos;re signs of a busy one that never had the right systems set up.
+            Admin chaos. Lost leads. Team stretched thin. These aren\'t signs of a struggling business — they\'re signs of a growing one that never had the right systems set up.
           </p>
         </motion.div>
 
