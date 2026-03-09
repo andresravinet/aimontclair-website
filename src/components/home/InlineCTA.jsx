@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Zap } from 'lucide-react'
+import {ArrowRight, Lightning} from '@phosphor-icons/react'
 
 export function InlineCTA({ industry = null }) {
   const text = industry
@@ -17,7 +17,7 @@ export function InlineCTA({ industry = null }) {
           to="/contact"
           className="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
         >
-          <Zap size={18} /> Get Your Free Audit Today
+          <Lightning size={18} /> Get Your Free Audit Today
         </Link>
         <span className="text-xs text-gray-500">
           ✓ No credit card required

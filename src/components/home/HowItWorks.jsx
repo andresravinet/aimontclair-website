@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Card } from '../ui/Card'
-import { CheckCircle } from 'lucide-react'
+import {CheckCircle} from '@phosphor-icons/react'
 
 export function HowItWorks() {
   const steps = [

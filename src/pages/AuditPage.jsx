@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { CheckCircle, ArrowRight } from 'lucide-react'
+import {CheckCircle, ArrowRight} from '@phosphor-icons/react'
 import { Button } from '../components/ui/Button'
 
 export default function AuditPage() {

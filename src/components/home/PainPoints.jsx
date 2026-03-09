@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Card } from '../ui/Card'
-import { Clock, PhoneCall, MessageSquare, UserCheck } from 'lucide-react'
+import {Clock, PhoneCall, ChatDots, UserCheck} from '@phosphor-icons/react'
 
 const container = {
   hidden: {},

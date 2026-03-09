@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { Menu, X, ChevronDown } from 'lucide-react'
+import {List, X, CaretDown} from '@phosphor-icons/react'
 import { Link, useLocation } from 'react-router-dom'
 
 const industryItems = [
@@ -72,7 +72,7 @@ export function Header() {
               aria-expanded={industriesOpen}
             >
               Industries
-              <ChevronDown size={16} className={'transition-transform duration-200 ' + (industriesOpen ? 'rotate-180' : '')} />
+              <CaretDown size={16} className={'transition-transform duration-200 ' + (industriesOpen ? 'rotate-180' : '')} />
             </button>
 
             <div
@@ -117,7 +117,7 @@ export function Header() {
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isOpen ? <X size={24} /> : <List size={24} />}
         </button>
 
         {/* Mobile Menu: Services > Industries > About > Contact */}
@@ -134,7 +134,7 @@ export function Header() {
                   onClick={() => setMobileIndustriesOpen((v) => !v)}
                 >
                   Industries
-                  <ChevronDown size={16} className={'ml-1 transition-transform duration-200 ' + (mobileIndustriesOpen ? 'rotate-180' : '')} />
+                  <CaretDown size={16} className={'ml-1 transition-transform duration-200 ' + (mobileIndustriesOpen ? 'rotate-180' : '')} />
                 </button>
                 {mobileIndustriesOpen && (
                   <div className="mt-2 pl-4 flex flex-col gap-3">

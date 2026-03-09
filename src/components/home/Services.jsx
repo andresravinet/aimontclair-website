@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Card } from '../ui/Card'
-import { Bot, Calendar, Zap, GraduationCap, ArrowRight } from 'lucide-react'
+import {Robot, Calendar, Lightning, GraduationCap, ArrowRight} from '@phosphor-icons/react'
 
 const container = {
   hidden: {},

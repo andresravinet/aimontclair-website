@@ -3,17 +3,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { Card } from '../../components/ui/Card'
 import { Button } from '../../components/ui/Button'
-import {
-  MessageSquare,
-  Check,
-  ArrowRight,
-  Scale,
-  Stethoscope,
-  Home,
-  Dumbbell,
-  UtensilsCrossed,
-  Wrench,
-} from 'lucide-react'
+import {ChatDots, Check, ArrowRight, Scales, Stethoscope, House, Barbell, ForkKnife, Wrench} from '@phosphor-icons/react'
 
 const industries = [
   {
@@ -127,7 +117,7 @@ export default function AIChatbot() {
             transition={{ duration: 0.6 }}
           >
             <div className="flex items-center gap-3 mb-4">
-              <MessageSquare className="w-8 h-8 text-brand" />
+              <ChatDots className="w-8 h-8 text-brand" />
               <p className="text-brand font-semibold text-sm uppercase tracking-wide">
                 Built for law firms, medical offices, gyms, and more
               </p>

@@ -3,18 +3,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { Card } from '../../components/ui/Card'
 import { Button } from '../../components/ui/Button'
-import {
-  Calendar,
-  Check,
-  ArrowRight,
-  Stethoscope,
-  Scale,
-  Dumbbell,
-  Scissors,
-  Briefcase,
-  Wrench,
-  X,
-} from 'lucide-react'
+import {Calendar, Check, ArrowRight, Stethoscope, Scales, Barbell, Scissors, Briefcase, Wrench, X} from '@phosphor-icons/react'
 
 const industries = [
   {

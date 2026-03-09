@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { TrendingUp, Clock, Zap } from 'lucide-react'
+import {TrendUp, Clock, Lightning} from '@phosphor-icons/react'
 
 const results = [
   {

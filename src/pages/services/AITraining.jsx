@@ -3,15 +3,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { Card } from '../../components/ui/Card'
 import { Button } from '../../components/ui/Button'
-import {
-  GraduationCap,
-  Check,
-  ArrowRight,
-  Scale,
-  Stethoscope,
-  Home,
-  Users,
-} from 'lucide-react'
+import {GraduationCap, Check, ArrowRight, Scales, Stethoscope, House, Users} from '@phosphor-icons/react'
 
 const tracks = [
   {

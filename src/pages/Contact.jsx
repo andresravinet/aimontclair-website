@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, MapPin, Clock, CheckCircle } from 'lucide-react'
+import {Envelope, MapPin, Clock, CheckCircle} from '@phosphor-icons/react'
 
 export default function Contact() {
   useEffect(() => {
@@ -154,7 +154,7 @@ export default function Contact() {
                 <h2 className="text-2xl font-bold text-navy mb-5">Get in Touch</h2>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3 text-gray-700">
-                    <Mail className="w-5 h-5 text-brand flex-shrink-0" />
+                    <Envelope className="w-5 h-5 text-brand flex-shrink-0" />
                     <a href="mailto:hello@aimontclair.com" className="text-brand hover:underline font-medium">
                       hello@aimontclair.com
                     </a>

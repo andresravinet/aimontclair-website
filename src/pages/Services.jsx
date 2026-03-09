@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Card } from '../components/ui/Card'
 import { Button } from '../components/ui/Button'
-import { MessageSquare, Clock, Workflow, BookOpen, ArrowRight } from 'lucide-react'
+import {ChatDots, Clock, GitBranch, BookOpen, ArrowRight} from '@phosphor-icons/react'
 
 const services = [
   {

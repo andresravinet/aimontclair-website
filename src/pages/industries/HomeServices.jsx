@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { Wrench, Phone, Clock, Star, DollarSign, Users, ChevronDown, ChevronUp, ArrowRight, CheckCircle, XCircle } from 'lucide-react'
+import {Wrench, Phone, Clock, Star, CurrencyDollar, Users, CaretDown, CaretUp, ArrowRight, CheckCircle, XCircle} from '@phosphor-icons/react'
 
 const painPoints = [
   {
@@ -136,9 +136,9 @@ export default function HomeServices() {
                 >
                   <span className="text-white font-semibold text-lg">{cat.title}</span>
                   {openCategory === i ? (
-                    <ChevronUp className="text-brand" size={20} />
+                    <CaretUp className="text-brand" size={20} />
                   ) : (
-                    <ChevronDown className="text-brand" size={20} />
+                    <CaretDown className="text-brand" size={20} />
                   )}
                 </button>
                 {openCategory === i && (

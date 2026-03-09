@@ -3,17 +3,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { Card } from '../../components/ui/Card'
 import { Button } from '../../components/ui/Button'
-import {
-  Zap,
-  Check,
-  ArrowRight,
-  Scale,
-  Stethoscope,
-  Home,
-  Dumbbell,
-  UtensilsCrossed,
-  Wrench,
-} from 'lucide-react'
+import {Lightning, Check, ArrowRight, Scales, Stethoscope, House, Barbell, ForkKnife, Wrench} from '@phosphor-icons/react'
 
 const industries = [
   {
@@ -133,7 +123,7 @@ export default function WorkflowAutomation() {
             transition={{ duration: 0.6 }}
           >
             <div className="flex items-center gap-3 mb-4">
-              <Zap className="w-8 h-8 text-brand" />
+              <Lightning className="w-8 h-8 text-brand" />
               <p className="text-brand font-semibold text-sm uppercase tracking-wide">
                 Custom automation for every industry
               </p>

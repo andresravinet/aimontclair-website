@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
+import {ArrowRight} from '@phosphor-icons/react'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },

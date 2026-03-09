@@ -1,4 +1,4 @@
-import { CheckCircle, ArrowRight } from 'lucide-react'
+import {CheckCircle, ArrowRight} from '@phosphor-icons/react'
 
 export function Button({ children, href, variant = 'primary', icon: Icon = null, className = '', ...props }) {
   const baseStyles = 'px-6 py-3 font-600 rounded-lg transition-all duration-300 inline-flex items-center gap-2 justify-center text-center'

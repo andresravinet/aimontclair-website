@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Briefcase, Heart, Home, Dumbbell, UtensilsCrossed, Wrench } from 'lucide-react'
+import {Briefcase, Heart, House, Barbell, ForkKnife, Wrench} from '@phosphor-icons/react'
 
 const industries = [
   {

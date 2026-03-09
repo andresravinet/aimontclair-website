@@ -1,4 +1,4 @@
-import { Star, Quote } from 'lucide-react'
+import {Star, Quotes} from '@phosphor-icons/react'
 
 const testimonials = [
   {
@@ -60,7 +60,7 @@ export function Testimonials() {
               </div>
 
               {/* Quote */}
-              <Quote size={24} className="text-brand/30 mb-3" />
+              <Quotes size={24} className="text-brand/30 mb-3" />
               <p className="text-slate-700 text-sm leading-relaxed flex-1 mb-6">
                 {t.quote}
               </p>

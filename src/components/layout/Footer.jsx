@@ -1,4 +1,4 @@
-import { Mail, MapPin } from 'lucide-react'
+import {Envelope, MapPin} from '@phosphor-icons/react'
 import { Link } from 'react-router-dom'
 
 export function Footer() {
@@ -78,7 +78,7 @@ export function Footer() {
             <h4 className="font-600 mb-4">Contact & Social</h4>
             <ul className="space-y-3 text-gray-400 text-sm">
               <li className="flex items-start gap-2">
-                <Mail size={16} className="mt-0.5 flex-shrink-0" />
+                <Envelope size={16} className="mt-0.5 flex-shrink-0" />
                 <a href="mailto:hello@aimontclair.com" className="hover:text-brand transition-colors">
                   hello@aimontclair.com
                 </a>

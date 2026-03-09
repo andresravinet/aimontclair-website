@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { Stethoscope, Phone, FileText, Clock, Users, Calendar, ChevronDown, ChevronUp, ArrowRight, CheckCircle, XCircle, Shield } from 'lucide-react'
+import {Stethoscope, Phone, FileText, Clock, Users, Calendar, CaretDown, CaretUp, ArrowRight, CheckCircle, XCircle, ShieldCheck} from '@phosphor-icons/react'
 
 const painPoints = [
   {
@@ -150,9 +150,9 @@ export default function MedicalDental() {
                 >
                   <span className="text-white font-semibold text-lg">{cat.title}</span>
                   {openCategory === i ? (
-                    <ChevronUp className="text-brand" size={20} />
+                    <CaretUp className="text-brand" size={20} />
                   ) : (
-                    <ChevronDown className="text-brand" size={20} />
+                    <CaretDown className="text-brand" size={20} />
                   )}
                 </button>
                 {openCategory === i && (
@@ -176,7 +176,7 @@ export default function MedicalDental() {
       {/* HIPAA Note */}
       <section className="bg-brand-light py-12 px-4 border-y border-brand-light">
         <div className="max-w-3xl mx-auto flex items-start gap-4">
-          <Shield className="text-brand flex-shrink-0 mt-1" size={28} />
+          <ShieldCheck className="text-brand flex-shrink-0 mt-1" size={28} />
           <div>
             <h3 className="text-lg font-bold text-slate-900 mb-2">A Note on HIPAA</h3>
             <p className="text-slate-700 leading-relaxed">

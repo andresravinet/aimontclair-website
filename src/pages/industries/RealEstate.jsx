@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { Home, Phone, Clock, Mail, Users, TrendingUp, ChevronDown, ChevronUp, ArrowRight, CheckCircle, XCircle } from 'lucide-react'
+import {House, Phone, Clock, Envelope, Users, TrendUp, CaretDown, CaretUp, ArrowRight, CheckCircle, XCircle} from '@phosphor-icons/react'
 
 const painPoints = [
   {
@@ -135,9 +135,9 @@ export default function RealEstate() {
                 >
                   <span className="text-white font-semibold text-lg">{cat.title}</span>
                   {openCategory === i ? (
-                    <ChevronUp className="text-brand" size={20} />
+                    <CaretUp className="text-brand" size={20} />
                   ) : (
-                    <ChevronDown className="text-brand" size={20} />
+                    <CaretDown className="text-brand" size={20} />
                   )}
                 </button>
                 {openCategory === i && (
@@ -245,10 +245,10 @@ export default function RealEstate() {
           <h3 className="text-xl font-semibold text-slate-900 mb-6">Related Services</h3>
           <div className="flex flex-wrap gap-4">
             <Link to="/services/ai-chatbot" className="flex items-center gap-2 bg-slate-50 border border-slate-200 hover:border-brand text-slate-700 px-5 py-3 rounded-lg transition-colors">
-              <Home size={18} className="text-brand" /> AI Chatbot for Lead Capture
+              <House size={18} className="text-brand" /> AI Chatbot for Lead Capture
             </Link>
             <Link to="/services/workflow-automation" className="flex items-center gap-2 bg-slate-50 border border-slate-200 hover:border-brand text-slate-700 px-5 py-3 rounded-lg transition-colors">
-              <TrendingUp size={18} className="text-brand" /> Workflow Automation
+              <TrendUp size={18} className="text-brand" /> Workflow Automation
             </Link>
             <Link to="/services/scheduling-automation" className="flex items-center gap-2 bg-slate-50 border border-slate-200 hover:border-brand text-slate-700 px-5 py-3 rounded-lg transition-colors">
               <Clock size={18} className="text-brand" /> Scheduling Automation

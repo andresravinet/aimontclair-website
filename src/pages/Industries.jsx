@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { Card } from '../components/ui/Card'
-import { Scale, Stethoscope, Home, Dumbbell, ShoppingBag, UtensilsCrossed, Wrench } from 'lucide-react'
+import {Scales, Stethoscope, House, Barbell, ShoppingBag, ForkKnife, Wrench} from '@phosphor-icons/react'
 
 const industries = [
   {

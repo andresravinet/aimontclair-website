@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { ChevronDown } from 'lucide-react'
+import {CaretDown} from '@phosphor-icons/react'
 
 export function FAQ() {
   const [openIdx, setOpenIdx] = useState(null)
@@ -80,7 +80,7 @@ export function FAQ() {
                 className="w-full bg-white/5 border border-white/10 rounded-lg p-6 flex items-center justify-between hover:bg-white/10 transition-all text-left"
               >
                 <span className="font-600 text-cream text-lg">{faq.q}</span>
-                <ChevronDown
+                <CaretDown
                   className={`w-5 h-5 text-accent flex-shrink-0 transition-transform ${
                     openIdx === idx ? 'rotate-180' : ''
                   }`}

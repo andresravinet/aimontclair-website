@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Card } from '../components/ui/Card'
 import { Button } from '../components/ui/Button'
-import { ArrowRight, Check, MessageSquare, Clock, Workflow, BookOpen } from 'lucide-react'
+import {ArrowRight, Check, ChatDots, Clock, GitBranch, BookOpen} from '@phosphor-icons/react'
 
 const serviceData = {
   'ai-chatbot': {
