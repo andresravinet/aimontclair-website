@@ -6,17 +6,17 @@ export function HowItWorks() {
     {
       number: '1',
       title: 'Free Audit',
-      description: 'I meet with your team, map your current workflows, and find the quick wins and bottlenecks. No cost, no obligation.',
+      description: 'Day 1. I meet with your team, map your workflows, and lock in scope. For websites, we nail down pages, goals, and content. No cost, no obligation.',
     },
     {
       number: '2',
-      title: 'Custom Build',
-      description: 'Based on the audit, I build a solution that fits your stack and your team. Start small, deliver fast, and measure impact.',
+      title: 'Build',
+      description: 'Days 2–4. I build to fit — website, app, or automation. Websites go from blank page to first draft in 2 days. Automations take 1–2 weeks. Fixed price, no surprises.',
     },
     {
       number: '3',
-      title: 'See Results',
-      description: 'Most teams see time savings in the first 2-4 weeks. I iterate based on feedback and help you scale what works.',
+      title: 'Go Live',
+      description: 'Day 5+. Most websites are live within 5 days of the audit. Automations show results in the first 1–2 weeks. I stay close until it\'s working.',
     },
   ]
 
@@ -54,7 +54,7 @@ export function HowItWorks() {
             How it works
           </motion.h2>
           <motion.p variants={itemVariants} className="text-lg text-gray-600 max-w-2xl">
-            Three steps from audit to running automation.
+            From first call to live &mdash; in days.
           </motion.p>
         </motion.div>
 
@@ -80,6 +80,33 @@ export function HowItWorks() {
               </Card>
             </motion.div>
           ))}
+        </motion.div>
+
+        {/* Website delivery timeline */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-10 border border-brand/20 rounded-xl p-6 bg-brand/5"
+        >
+          <p className="text-xs tracking-[0.2em] uppercase font-semibold text-brand mb-4">Website delivery — typical timeline</p>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-0">
+            <div className="flex-1">
+              <div className="text-2xl font-bold font-display text-navy">Day 1</div>
+              <div className="text-sm text-gray-600">Audit &amp; scope locked</div>
+            </div>
+            <div className="hidden sm:block text-gray-300 text-xl px-4">→</div>
+            <div className="flex-1">
+              <div className="text-2xl font-bold font-display text-navy">Day 3</div>
+              <div className="text-sm text-gray-600">First draft, your review</div>
+            </div>
+            <div className="hidden sm:block text-gray-300 text-xl px-4">→</div>
+            <div className="flex-1">
+              <div className="text-2xl font-bold font-display text-navy">Day 5</div>
+              <div className="text-sm text-gray-600">Site goes live</div>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

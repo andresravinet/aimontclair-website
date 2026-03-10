@@ -24,8 +24,14 @@ export function Hero() {
           </motion.div>
 
           <motion.div custom={1} initial="hidden" animate="visible" variants={fadeUp}>
-            <p className="text-xl text-cream-muted mb-6 leading-relaxed">
+            <p className="text-xl text-cream-muted mb-4 leading-relaxed">
               I live in Montclair. I help local businesses &mdash; dental offices, law firms, contractors, restaurants &mdash; run the parts of their operation that don&apos;t need a human anymore.
+            </p>
+          </motion.div>
+
+          <motion.div custom={1.5} initial="hidden" animate="visible" variants={fadeUp}>
+            <p className="text-sm font-semibold text-cream/80 mb-6 leading-relaxed">
+              I build websites in 5 days and custom apps in days &mdash; fixed price, no agency wait.
             </p>
           </motion.div>
 

@@ -15,6 +15,36 @@ export function Pricing() {
           </p>
         </div>
 
+        {/* Websites & Apps pricing callout */}
+        <div className="mb-10 bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-md transition-shadow duration-200">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase font-semibold text-brand mb-1">New</p>
+              <h3 className="text-xl font-bold font-display text-slate-900 mb-1">Websites &amp; Apps</h3>
+              <p className="text-slate-500 text-sm mb-4 sm:mb-0">Built in days, not months. Real code, no templates. Fixed price before I start.</p>
+            </div>
+            <Link to="/contact" className="flex-shrink-0 inline-flex items-center justify-center gap-2 py-2.5 px-6 bg-accent hover:bg-accent-dark text-white font-semibold rounded-lg transition-colors duration-200 text-sm">
+              Get a Quote
+            </Link>
+          </div>
+          <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4 pt-5 border-t border-slate-100">
+            <div className="flex items-start gap-3">
+              <CheckCircle size={16} className="text-brand flex-shrink-0 mt-0.5" />
+              <div>
+                <div className="font-semibold text-slate-900 text-sm">Website — from $800</div>
+                <div className="text-slate-500 text-xs mt-0.5">Live in 5 days &middot; Up to 5 pages &middot; Mobile-ready &middot; No drag-and-drop templates</div>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <CheckCircle size={16} className="text-brand flex-shrink-0 mt-0.5" />
+              <div>
+                <div className="font-semibold text-slate-900 text-sm">Custom App — from $2,500</div>
+                <div className="text-slate-500 text-xs mt-0.5">Live in 7–10 days &middot; Built to your workflow &middot; Fixed price &middot; Real tools</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Starter */}
           <div className="bg-white rounded-2xl border border-slate-200 p-8 hover:shadow-lg hover:-translate-y-1 transition-all duration-200">

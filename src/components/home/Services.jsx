@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Card } from '../ui/Card'
-import { Bot, Calendar, Zap, GraduationCap, ArrowRight } from 'lucide-react'
+import { Bot, Calendar, Zap, GraduationCap, ArrowRight, Globe } from 'lucide-react'
 
 const container = {
   hidden: {},
@@ -38,6 +38,12 @@ export function Services() {
       title: 'Team Training',
       description: "Hands-on workshops that give your team the skills to use AI tools confidently every day. Each workshop is tailored to your team's current skill level and business goals. Your team actually uses the tools — because they understand them.",
     },
+    {
+      link: '/contact',
+      icon: Globe,
+      title: 'Websites & Apps',
+      description: "I build websites in 5 days and custom apps in days — not months. Real code, not drag-and-drop templates. Fixed price before I start. Most sites are live before an agency has finished the proposal.",
+    },
   ]
 
   return (
@@ -52,10 +58,10 @@ export function Services() {
         >
           <p className="text-xs tracking-[0.2em] uppercase font-semibold text-brand mb-3">What I do</p>
           <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
-            Four services, one goal
+            What I build for you
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl">
-            Automate the repetitive work and get your team&apos;s time back.
+            Automation, websites, and apps &mdash; delivered fast, priced fair.
           </p>
         </motion.div>
 
@@ -64,13 +70,13 @@ export function Services() {
           whileInView="visible"
           viewport={{ once: true, margin: '-40px' }}
           variants={container}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {services.map((service, idx) => {
             const Icon = service.icon
             return (
               <motion.div key={idx} variants={card}>
-                <Link to={`/services/${service.slug}`}>
+                <Link to={service.link || `/services/${service.slug}`}>
                   <Card className="hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
                     <Icon className="w-10 h-10 text-brand mb-4" />
                     <h3 className="text-xl font-bold text-navy mb-3">{service.title}</h3>
