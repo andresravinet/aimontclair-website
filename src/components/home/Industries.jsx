@@ -42,12 +42,13 @@ const industries = [
 
 export function Industries() {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-warm-cream py-20">
       <div className="container-custom">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">We Know Your Industry</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Every business is different. Click your industry to see exactly what we'd automate for you.
+        <div className="mb-12">
+          <p className="text-xs tracking-[0.2em] uppercase font-semibold text-brand mb-3">Industries we serve</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">We know your industry</h2>
+          <p className="text-lg text-gray-600 max-w-2xl">
+            Every business is different. Click your industry to see exactly what I&apos;d automate for you.
           </p>
         </div>
 

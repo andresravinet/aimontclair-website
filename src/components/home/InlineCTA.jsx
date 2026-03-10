@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Zap } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 export function InlineCTA({ industry = null }) {
   const text = industry
@@ -7,19 +7,19 @@ export function InlineCTA({ industry = null }) {
     : 'Stop wasting hours on repetitive admin work.'
 
   return (
-    <div className="text-center py-12 bg-gradient-to-b from-transparent to-blue-50 px-4">
+    <div className="text-left py-12 bg-warm-cream px-4">
       <p className="text-slate-700 text-lg font-semibold mb-2">{text}</p>
       <p className="text-gray-600 text-sm mb-6">
-        Let us show you exactly how much time you\'ll get back.
+        Let me show you exactly how much time you&apos;ll get back.
       </p>
-      <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+      <div className="flex flex-col sm:flex-row gap-3 items-start">
         <Link
           to="/contact"
-          className="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
+          className="inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
         >
-          <Zap size={18} /> Get Your Free Audit Today
+          <ArrowRight size={18} /> Get Your Free Audit Today
         </Link>
-        <span className="text-xs text-gray-500">
+        <span className="text-xs text-gray-500 self-center">
           ✓ No credit card required
         </span>
       </div>

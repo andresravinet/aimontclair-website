@@ -1,4 +1,4 @@
-import { Star, Quote } from 'lucide-react'
+import { Quote } from 'lucide-react'
 
 const testimonials = [
   {
@@ -7,7 +7,6 @@ const testimonials = [
     business: 'Okonkwo Family Law',
     location: 'Montclair, NJ',
     avatar: 'SO',
-    rating: 5,
     quote: 'I was spending almost 3 hours a day on intake calls and scheduling conflicts. Andres built us a chatbot that handles the first conversation, qualifies the lead, and books the consultation — all automatically. My receptionist hasn\'t touched a scheduling call in six weeks. I wish I\'d done this two years ago.',
     result: 'Saved 15+ hrs/week on intake'
   },
@@ -17,7 +16,6 @@ const testimonials = [
     business: 'Webb Dental Group',
     location: 'Glen Ridge, NJ',
     avatar: 'MW',
-    rating: 5,
     quote: 'No-show appointments were costing us real money every week. Andres set up automated reminders, easy rescheduling links, and a confirmation system that actually works. Our no-show rate dropped by half in the first month. The whole thing was live in less than three weeks and my staff barely had to do anything.',
     result: '50% fewer no-shows in 30 days'
   },
@@ -27,7 +25,6 @@ const testimonials = [
     business: 'Bloom Wellness Studio',
     location: 'Verona, NJ',
     avatar: 'PN',
-    rating: 5,
     quote: 'We were losing leads every weekend because no one was around to respond. Andres built an after-hours chatbot that answers questions, captures contact info, and sends a follow-up automatically. We went from losing maybe 10 leads a weekend to following up with all of them by Monday morning. It paid for itself in the first month.',
     result: '3x more weekend leads captured'
   }
@@ -35,11 +32,12 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-warm-cream">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
+        <div className="mb-14">
+          <p className="text-xs tracking-[0.2em] uppercase font-semibold text-brand mb-3">Client stories</p>
           <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-            What Clients Are Saying
+            What clients are saying
           </h2>
           <p className="text-lg text-slate-500">
             Real results from Essex County small businesses.
@@ -50,15 +48,8 @@ export function Testimonials() {
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200 flex flex-col"
+              className="bg-white rounded-2xl p-8 border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200 flex flex-col"
             >
-              {/* Stars */}
-              <div className="flex gap-1 mb-4">
-                {[...Array(t.rating)].map((_, i) => (
-                  <Star key={i} size={16} className="text-amber-400 fill-amber-400" />
-                ))}
-              </div>
-
               {/* Quote */}
               <Quote size={24} className="text-brand/30 mb-3" />
               <p className="text-slate-700 text-sm leading-relaxed flex-1 mb-6">
@@ -85,7 +76,7 @@ export function Testimonials() {
           ))}
         </div>
 
-        <p className="text-center text-slate-400 text-xs mt-8">
+        <p className="text-slate-400 text-xs mt-8">
           * Business names reflect client industries. Individual details shared with permission.
         </p>
       </div>

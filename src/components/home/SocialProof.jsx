@@ -46,20 +46,21 @@ const card = {
 
 export function SocialProof() {
   return (
-    <section className="py-16 md:py-24 bg-slate-50">
+    <section className="py-16 md:py-24 bg-warm-cream">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="mb-12"
         >
+          <p className="text-xs tracking-[0.2em] uppercase font-semibold text-brand mb-3">Numbers</p>
           <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
-            Real Results. Real Montclair Businesses.
+            Real results. Real Montclair businesses.
           </h2>
-          <p className="text-gray-600 max-w-xl mx-auto">
-            See what happened when local businesses stopped losing hours to admin work.
+          <p className="text-gray-600 max-w-xl">
+            What happened when local businesses stopped losing hours to admin work.
           </p>
         </motion.div>
 
@@ -74,9 +75,9 @@ export function SocialProof() {
             <motion.div
               key={i}
               variants={card}
-              className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
+              className="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
             >
-              <div className="h-1 bg-gradient-to-r from-brand to-teal-400 rounded-t-xl" />
+              <div className="h-1 bg-brand rounded-t-xl" />
               <div className="p-6">
                 <div className="text-3xl mb-3">{item.icon}</div>
                 <div className="text-xs font-semibold text-brand uppercase tracking-wide mb-1">
@@ -92,12 +93,12 @@ export function SocialProof() {
           ))}
         </motion.div>
 
-        <p className="text-center text-xs text-gray-400 mb-12">
+        <p className="text-xs text-gray-400 mb-12">
           Results based on typical client outcomes. Names withheld for privacy.
         </p>
 
         {/* Trust signals */}
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap gap-4">
           {trustSignals.map((signal, i) => (
             <div
               key={i}

@@ -6,6 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'canvas': '#0D0F12',
+        'cream': '#EDE8DC',
+        'cream-muted': '#A89F8C',
+        'warm-cream': '#F5F0E8',
         'navy': '#0a1628',
         'slate-light': '#F8FAFC',
         brand: {

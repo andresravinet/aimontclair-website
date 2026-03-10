@@ -8,7 +8,7 @@ export function FAQ() {
   const faqs = [
     {
       q: 'How much does it cost?',
-      a: 'Projects start with a free audit. Most pilots range from a few hundred to a few thousand dollars. We agree on a clear fixed or milestone-based price before work begins.',
+      a: 'Projects start with a free audit. Most pilots range from a few hundred to a few thousand dollars. I agree on a clear fixed price before work begins.',
     },
     {
       q: 'How long does it take?',
@@ -16,11 +16,11 @@ export function FAQ() {
     },
     {
       q: 'How do you handle data and privacy?',
-      a: 'We follow least-privilege access, encrypt data in transit, and use reputable providers.',
+      a: 'I follow least-privilege access, encrypt data in transit, and use reputable providers.',
     },
     {
       q: 'Are you HIPAA compliant?',
-      a: 'We can design HIPAA-conscious workflows and use vendor BAAs where applicable.',
+      a: 'I can design HIPAA-conscious workflows and use vendor BAAs where applicable.',
     },
     {
       q: 'What systems can you integrate with?',
@@ -28,7 +28,7 @@ export function FAQ() {
     },
     {
       q: 'Can we pause or cancel?',
-      a: 'Yes. You can pause or cancel at any time. We\'ll ensure a clean handoff.',
+      a: 'Yes. You can pause or cancel at any time. I\'ll make sure you get a clean handoff.',
     },
   ]
 
@@ -52,17 +52,17 @@ export function FAQ() {
   }
 
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 md:py-24 bg-warm-cream">
       <div className="container-custom max-w-3xl">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
           variants={containerVariants}
-          className="text-center mb-12"
+          className="mb-12"
         >
           <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-navy mb-4">
-            Frequently Asked Questions
+            Common questions
           </motion.h2>
         </motion.div>
 

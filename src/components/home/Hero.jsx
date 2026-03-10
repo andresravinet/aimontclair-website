@@ -13,18 +13,18 @@ const fadeUp = {
 
 export function Hero() {
   return (
-    <section className="gradient-navy-to-slate text-white py-20 md:py-32">
+    <section className="bg-canvas grain-overlay text-white py-20 md:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh] py-20">
         {/* LEFT COLUMN */}
         <div>
           <motion.div custom={0} initial="hidden" animate="visible" variants={fadeUp}>
-            <h1 className="text-4xl md:text-6xl font-bold font-display mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold font-display mb-6 leading-tight text-cream">
               Your neighbor who builds the systems.
             </h1>
           </motion.div>
 
           <motion.div custom={1} initial="hidden" animate="visible" variants={fadeUp}>
-            <p className="text-xl text-gray-300 mb-6 leading-relaxed">
+            <p className="text-xl text-cream-muted mb-6 leading-relaxed">
               I live in Montclair. I help local businesses &mdash; dental offices, law firms, contractors, restaurants &mdash; run the parts of their operation that don&apos;t need a human anymore.
             </p>
           </motion.div>
@@ -38,7 +38,7 @@ export function Hero() {
                 className="w-12 h-12 rounded-full object-cover ring-2 ring-brand/40 flex-shrink-0"
                 loading="lazy"
               />
-              <p className="text-white/80 text-sm italic">
+              <p className="text-cream/70 text-sm italic">
                 &ldquo;A dental office near me had a full waiting list and a front desk spending half the day on the phone managing appointments. Not because they were bad at their jobs &mdash; no one had ever set up a better way. We fixed it in two weeks.&rdquo;
               </p>
             </div>
@@ -51,7 +51,7 @@ export function Hero() {
               </Button>
               <a
                 href="#how-it-works"
-                className="text-gray-300 hover:text-white transition-colors text-base flex items-center gap-2 underline underline-offset-2"
+                className="text-cream-muted hover:text-cream transition-colors text-base flex items-center gap-2 underline underline-offset-2"
               >
                 See how it works
                 <ArrowDown size={16} />
@@ -59,11 +59,11 @@ export function Hero() {
             </div>
 
             <div className="bg-brand/20 backdrop-blur-sm rounded-lg p-4 inline-block mt-6 border border-brand/40">
-              <p className="text-sm font-600 text-white">
+              <p className="text-sm font-600 text-cream">
                 Serving Montclair, Glen Ridge, Verona, Bloomfield, and the greater Essex County area
               </p>
             </div>
-            <p className="text-white/50 text-xs mt-3">
+            <p className="text-cream/50 text-xs mt-3">
               Projects from $500 &middot; Free audit &middot; No commitment
             </p>
           </motion.div>

@@ -104,7 +104,7 @@ const serviceData = {
       },
       {
         question: 'What if customers want to talk to a real person?',
-        answer: 'Seamless handoff. If the chatbot can&apos;t help, it collects context and connects them to your team via email, phone, or Messenger. Zero friction.',
+        answer: 'Clean handoff. If the chatbot can&apos;t help, it collects context and connects them to your team via email, phone, or Messenger. Zero friction.',
       },
       {
         question: 'Do I need technical skills to manage it?',
@@ -344,9 +344,9 @@ const serviceData = {
   'ai-training': {
     icon: BookOpen,
     title: 'Team Training & AI Workshops',
-    subtitle: 'Empower Your Team to Innovate',
+    subtitle: 'Your Team, Trained to Actually Use AI',
     hero: 'Your Team Actually Uses AI. Because They Understand It.',
-    description: 'We deliver hands-on workshops that empower your team to confidently use AI tools and modern digital workflows. Customized to your tools, skill level, and business goals.',
+    description: 'Hands-on workshops that give your team the skills to use AI tools confidently in their daily work. Customized to your tools, skill level, and business goals.',
     problem: {
       title: 'The Problem',
       points: [
@@ -484,7 +484,7 @@ export default function ServiceDetail() {
   return (
     <>
       {/* Hero */}
-      <section className="gradient-navy-to-slate text-white py-16 md:py-32">
+      <section className="bg-canvas grain-overlay text-white py-16 md:py-32">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -498,7 +498,7 @@ export default function ServiceDetail() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               {data.hero}
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mb-8">
+            <p className="text-xl text-cream-muted max-w-3xl mb-8">
               {data.description}
             </p>
             <Button href="/contact" variant="primary">
@@ -538,14 +538,14 @@ export default function ServiceDetail() {
       </section>
 
       {/* Solution / How It Works */}
-      <section className="py-16 md:py-24 bg-gradient-subtle">
+      <section className="py-16 md:py-24 bg-warm-cream">
         <div className="container-custom">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl font-bold text-navy mb-12 text-center"
+            className="text-3xl md:text-4xl font-bold text-navy mb-12"
           >
             {data.solution.title}
           </motion.h2>
@@ -609,7 +609,7 @@ export default function ServiceDetail() {
       </section>
 
       {/* Use Cases by Industry */}
-      <section className="py-16 md:py-24 bg-gradient-subtle">
+      <section className="py-16 md:py-24 bg-warm-cream">
         <div className="container-custom">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -648,7 +648,7 @@ export default function ServiceDetail() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl font-bold text-navy mb-12 text-center"
+            className="text-3xl md:text-4xl font-bold text-navy mb-12"
           >
             {data.roi.title}
           </motion.h2>
@@ -673,7 +673,7 @@ export default function ServiceDetail() {
       </section>
 
       {/* Pricing */}
-      <section className="py-16 md:py-24 bg-gradient-subtle">
+      <section className="py-16 md:py-24 bg-warm-cream">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -735,7 +735,7 @@ export default function ServiceDetail() {
       </section>
 
       {/* Related Services */}
-      <section className="py-16 md:py-24 bg-gradient-subtle">
+      <section className="py-16 md:py-24 bg-warm-cream">
         <div className="container-custom">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -778,7 +778,7 @@ export default function ServiceDetail() {
       </section>
 
       {/* Final CTA */}
-      <section className="gradient-navy-to-slate text-white py-16 md:py-24">
+      <section className="bg-canvas grain-overlay text-white py-16 md:py-24">
         <div className="container-custom text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -787,7 +787,7 @@ export default function ServiceDetail() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Automate?</h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-cream-muted mb-8 max-w-2xl mx-auto">
               Let&apos;s talk about your business, your challenges, and what automation could mean for you. Free audit, zero obligation.
             </p>
             <Button href="/contact" variant="primary">

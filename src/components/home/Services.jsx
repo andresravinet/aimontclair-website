@@ -18,43 +18,44 @@ export function Services() {
       slug: 'ai-chatbot',
       icon: Bot,
       title: 'AI Chatbots',
-      description: 'We build branded assistants that greet visitors on your website and social channels, answer common questions, qualify leads, and book appointments hands-free. Assistants are trained on your policies, pricing, and tone. Your website answers questions and books consultations while you\'re closed. No staff required.',
+      description: 'Branded assistants that greet visitors on your website and social channels, answer common questions, qualify leads, and book appointments — all without staff involvement. Your website answers questions and books consultations while you\'re closed.',
     },
     {
       slug: 'scheduling-automation',
       icon: Calendar,
       title: 'Scheduling Automation',
-      description: "We'll map your current process, then add the right nudges so clients show up and staff waste less time. Tailored automations to your stack and industry. No more phone tag. Clients book, reschedule, and get reminders automatically.",
+      description: "I map your current process, then add the right nudges so clients show up and staff waste less time. Tailored to your stack and industry. No more phone tag. Clients book, reschedule, and get reminders automatically.",
     },
     {
       slug: 'workflow-automation',
       icon: Zap,
       title: 'Workflow Automation',
-      description: "When you have a unique workflow, we build to fit — integrations, internal tools, and specialty automations that move the needle. We start small, measure impact, and scale what works. The repetitive work gets done. You stop thinking about it.",
+      description: "When you have a unique workflow, I build to fit — integrations, internal tools, and specialty automations that move the needle. Start small, measure impact, and scale what works. The repetitive work gets done. You stop thinking about it.",
     },
     {
       slug: 'ai-training',
       icon: GraduationCap,
       title: 'Team Training',
-      description: "We deliver hands-on workshops that empower your team to confidently use AI tools and modern digital workflows. Each workshop is tailored to your team's current skill level and business goals. Your team actually uses the tools — because they understand them.",
+      description: "Hands-on workshops that give your team the skills to use AI tools confidently every day. Each workshop is tailored to your team's current skill level and business goals. Your team actually uses the tools — because they understand them.",
     },
   ]
 
   return (
-    <section id="services" className="py-16 md:py-24">
+    <section id="services" className="py-16 md:py-24 bg-warm-cream">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="mb-12"
         >
+          <p className="text-xs tracking-[0.2em] uppercase font-semibold text-brand mb-3">What I do</p>
           <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
-            What We Offer
+            Four services, one goal
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Four core services to automate your business and get your team&apos;s time back.
+          <p className="text-lg text-gray-600 max-w-2xl">
+            Automate the repetitive work and get your team&apos;s time back.
           </p>
         </motion.div>
 
@@ -75,7 +76,7 @@ export function Services() {
                     <h3 className="text-xl font-bold text-navy mb-3">{service.title}</h3>
                     <p className="text-gray-600 text-sm mb-4">{service.description}</p>
                     <div className="flex items-center gap-2 text-brand font-bold text-sm">
-                      Learn more
+                      See how it works
                       <ArrowRight className="w-4 h-4" />
                     </div>
                   </Card>

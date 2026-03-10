@@ -117,8 +117,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <ScrollReveal><PainPoints /></ScrollReveal>
       <ScrollReveal delay={0.1}><Industries /></ScrollReveal>
+      <ScrollReveal><PainPoints /></ScrollReveal>
       <ScrollReveal delay={0.1}><Services /></ScrollReveal>
       <ScrollReveal><Results /></ScrollReveal>
       <Integrations />

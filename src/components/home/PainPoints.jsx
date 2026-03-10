@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { Card } from '../ui/Card'
 import { Clock, PhoneCall, MessageSquare, UserCheck } from 'lucide-react'
 
 const container = {
@@ -36,20 +35,21 @@ export function PainPoints() {
   ]
 
   return (
-    <section className="py-16 md:py-24 bg-navy text-white">
+    <section className="py-16 md:py-24 bg-canvas grain-overlay">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Feeling Overwhelmed? You\'re Not Alone.
+          <p className="text-xs tracking-[0.2em] uppercase font-semibold text-accent mb-3">Sound familiar?</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-cream mb-4">
+            Feeling overwhelmed? You&apos;re not alone.
           </h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Admin chaos. Lost leads. Team stretched thin. These aren\'t signs of a struggling business — they\'re signs of a growing one that never had the right systems set up.
+          <p className="text-lg text-cream-muted max-w-2xl">
+            Admin chaos. Lost leads. Team stretched thin. These aren&apos;t signs of a struggling business — they&apos;re signs of a growing one that never had the right systems set up.
           </p>
         </motion.div>
 
@@ -64,11 +64,11 @@ export function PainPoints() {
             const Icon = point.icon
             return (
               <motion.div key={idx} variants={card}>
-                <Card className="hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
-                  <Icon className="w-12 h-12 text-brand mb-4" />
-                  <h3 className="text-xl font-bold text-navy mb-2">{point.title}</h3>
-                  <p className="text-gray-600 text-base">{point.description}</p>
-                </Card>
+                <div className="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-white/20 hover:shadow-lg transition-all duration-200 h-full">
+                  <Icon className="w-8 h-8 text-cream-muted mb-4" />
+                  <h3 className="text-lg font-bold text-cream mb-2">{point.title}</h3>
+                  <p className="text-cream-muted text-sm">{point.description}</p>
+                </div>
               </motion.div>
             )
           })}

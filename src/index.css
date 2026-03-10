@@ -32,7 +32,25 @@ html {
 }
 
 .gradient-navy-to-slate {
-  background: linear-gradient(135deg, #0F172A 0%, #1e293b 100%);
+  background: #0D0F12;
+}
+
+.grain-overlay {
+  position: relative;
+}
+.grain-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/grain.svg');
+  background-repeat: repeat;
+  opacity: 0.035;
+  pointer-events: none;
+  z-index: 1;
+}
+.grain-overlay > * {
+  position: relative;
+  z-index: 2;
 }
 
 .gradient-subtle {

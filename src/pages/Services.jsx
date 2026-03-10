@@ -34,8 +34,8 @@ const services = [
     slug: 'ai-training',
     icon: BookOpen,
     title: 'Team Training & AI Workshops',
-    subtitle: 'Empower Your Team to Innovate',
-    description: 'Hands-on workshops that empower your team to confidently use AI tools and modern digital workflows. Customized to your specific tools and skill level.',
+    subtitle: 'Your Team, Trained to Actually Use AI',
+    description: 'Hands-on workshops that give your team the skills to use AI tools confidently every day. Customized to your specific tools and skill level.',
     highlight: 'Higher adoption, 5-10 hrs saved per week',
   },
 ]
@@ -62,7 +62,7 @@ export default function Services() {
   return (
     <>
       {/* Hero */}
-      <section className="gradient-navy-to-slate text-white py-16 md:py-32">
+      <section className="bg-canvas grain-overlay text-white py-16 md:py-32">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -72,7 +72,7 @@ export default function Services() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Our Services
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl">
+            <p className="text-xl text-cream-muted max-w-3xl">
               Four core services to automate your business, reduce manual work, and get your team&apos;s time back.
             </p>
           </motion.div>
@@ -80,7 +80,7 @@ export default function Services() {
       </section>
 
       {/* Service Cards */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-warm-cream">
         <div className="container-custom">
           <motion.div
             initial="hidden"
@@ -126,7 +126,7 @@ export default function Services() {
       </section>
 
       {/* Service Comparison */}
-      <section className="py-16 md:py-24 bg-gradient-subtle">
+      <section className="py-16 md:py-24 bg-warm-cream">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -134,8 +134,8 @@ export default function Services() {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">
-              Choose the Right Service for You
+            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-12">
+              Choose the right service for you
             </h2>
 
             <div className="overflow-x-auto">
@@ -181,7 +181,7 @@ export default function Services() {
       </section>
 
       {/* How We Work */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-warm-cream">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -189,8 +189,8 @@ export default function Services() {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">
-              Our Process
+            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-12">
+              My process
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -198,12 +198,12 @@ export default function Services() {
                 {
                   step: '1',
                   title: 'Free Audit',
-                  desc: 'We understand your business, challenges, and goals. Zero obligation.',
+                  desc: 'I understand your business, challenges, and goals. Zero obligation.',
                 },
                 {
                   step: '2',
                   title: 'Custom Plan',
-                  desc: 'We design a tailored solution with timeline and investment.',
+                  desc: 'I design a tailored solution with timeline and investment.',
                 },
                 {
                   step: '3',
@@ -238,7 +238,7 @@ export default function Services() {
       </section>
 
       {/* Industries We Serve */}
-      <section className="py-16 md:py-24 bg-gradient-subtle">
+      <section className="py-16 md:py-24 bg-warm-cream">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -246,11 +246,11 @@ export default function Services() {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4 text-center">
-              Industries We Serve
+            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
+              Industries I serve
             </h2>
-            <p className="text-gray-600 text-lg text-center max-w-2xl mx-auto mb-12">
-              Whether you&apos;re in law, healthcare, real estate, fitness, or retail — we have solutions tailored to your industry.
+            <p className="text-gray-600 text-lg max-w-2xl mb-12">
+              Whether you&apos;re in law, healthcare, real estate, fitness, or retail — I build solutions tailored to your industry.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
@@ -279,7 +279,7 @@ export default function Services() {
       </section>
 
       {/* CTA */}
-      <section className="gradient-navy-to-slate text-white py-16 md:py-24">
+      <section className="bg-canvas grain-overlay text-white py-16 md:py-24">
         <div className="container-custom text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -288,8 +288,8 @@ export default function Services() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Automate?</h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Let&apos;s discuss your business and find the perfect solution. Free audit, zero obligation.
+            <p className="text-xl text-cream-muted mb-8 max-w-2xl mx-auto">
+              Let&apos;s discuss your business and find the right fit. Free audit, zero obligation.
             </p>
             <Button href="/contact" variant="primary">
               Get My Free Automation Audit

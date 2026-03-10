@@ -14,13 +14,13 @@ export default function About() {
   return (
     <>
       {/* Hero */}
-      <section className="gradient-navy-to-slate text-white py-16 md:py-28">
+      <section className="bg-canvas grain-overlay text-white py-16 md:py-28">
         <div className="container-custom">
           <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
             {/* Text */}
             <div className="flex-1 order-2 md:order-1">
               <h1 className="text-4xl md:text-5xl font-bold font-display mb-4">{"I'm Andres. I live here too."}</h1>
-              <p className="text-lg text-gray-300 max-w-xl leading-relaxed">
+              <p className="text-lg text-cream-muted max-w-xl leading-relaxed">
                 AI Montclair isn&apos;t an agency. It&apos;s me &mdash; a Montclair resident who spent years in tech and decided to put that to work for the businesses I walk past every day.
               </p>
             </div>
@@ -42,7 +42,7 @@ export default function About() {
       </section>
 
       {/* Origin Story */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-warm-cream">
         <div className="container-custom max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -101,7 +101,7 @@ export default function About() {
             </div>
 
             {/* CTA */}
-            <div className="bg-slate-50 rounded-2xl p-10 text-center">
+            <div className="bg-white border border-slate-100 rounded-2xl p-10 text-center">
               <p className="text-gray-600 mb-6 text-lg max-w-2xl mx-auto">
                 If you run a business in Montclair or Essex County and you&apos;re doing something by hand that feels like it shouldn&apos;t be &mdash; let&apos;s talk. 30 minutes. I&apos;ll tell you honestly whether automation makes sense for you.
               </p>
