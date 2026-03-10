@@ -25,7 +25,7 @@ export function Hero() {
 
           <motion.div custom={1} initial="hidden" animate="visible" variants={fadeUp}>
             <p className="text-xl text-cream-muted mb-4 leading-relaxed">
-              I live in Montclair. I help local businesses &mdash; dental offices, law firms, contractors, restaurants &mdash; run the parts of their operation that don&apos;t need a human anymore.
+              Stop losing hours to scheduling chaos, missed leads, and repetitive work. I help Montclair businesses &mdash; dental offices, law firms, contractors, restaurants &mdash; reclaim their time with AI and automation that actually works.
             </p>
           </motion.div>
 
@@ -53,7 +53,7 @@ export function Hero() {
           <motion.div custom={3} initial="hidden" animate="visible" variants={fadeUp}>
             <div className="flex flex-col sm:flex-row gap-4 mb-4 items-center">
               <Button href="/contact" variant="primary" icon={ArrowRight}>
-                Get My Free Automation Audit
+                Get Your Free Automation Audit
               </Button>
               <a
                 href="#how-it-works"

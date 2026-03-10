@@ -12,10 +12,10 @@ export function CTASection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-cream">
-            Montclair&apos;s small businesses deserve the same tools as the big guys.
+            Montclair business owner? Stop losing hours to admin chaos.
           </h2>
           <p className="text-xl text-cream-muted mb-8 max-w-2xl mx-auto">
-            Let&apos;s build yours. Free 30-minute audit &mdash; I&apos;ll identify exactly what can be automated in your business.
+            I&apos;ll show you exactly where you can reclaim 5+ hours per week. Free 30-minute audit — no obligation, no sales pitch.
           </p>
           <Button href="/contact" variant="primary">
             Get My Free Automation Audit
