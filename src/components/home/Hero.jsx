@@ -11,32 +11,73 @@ const fadeUp = {
   }),
 }
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.05,
+      delayChildren: 0.2,
+    },
+  },
+}
+
+const wordVariants = {
+  hidden: { opacity: 0, y: 10 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+      ease: 'easeOut',
+    },
+  },
+}
+
+function AnimatedHeadline({ text }) {
+  const words = text.split(' ')
+  return (
+    <motion.div variants={containerVariants} initial="hidden" animate="visible" className="flex flex-wrap gap-2 md:gap-3">
+      {words.map((word, idx) => (
+        <motion.span key={idx} variants={wordVariants} className="text-4xl md:text-6xl font-bold font-display leading-tight text-cream">
+          {word}
+        </motion.span>
+      ))}
+    </motion.div>
+  )
+}
+
 export function Hero() {
   return (
     <section className="bg-canvas grain-overlay text-white py-20 md:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh] py-20">
         {/* LEFT COLUMN */}
         <div>
-          <motion.div custom={0} initial="hidden" animate="visible" variants={fadeUp}>
-            <h1 className="text-4xl md:text-6xl font-bold font-display mb-6 leading-tight text-cream">
-              Your neighbor who builds the systems.
-            </h1>
+          <motion.div initial="hidden" animate="visible" variants={fadeUp} custom={0}>
+            <AnimatedHeadline text="Your neighbor who builds the systems." />
           </motion.div>
 
-          <motion.div custom={1} initial="hidden" animate="visible" variants={fadeUp}>
+          <motion.div custom={1.5} initial="hidden" animate="visible" variants={fadeUp}>
             <p className="text-xl text-cream-muted mb-4 leading-relaxed">
               Stop losing hours to scheduling chaos, missed leads, and repetitive work. I help Montclair businesses &mdash; dental offices, law firms, contractors, restaurants &mdash; reclaim their time with AI and automation that actually works.
             </p>
           </motion.div>
 
-          <motion.div custom={1.5} initial="hidden" animate="visible" variants={fadeUp}>
+          <motion.div custom={2} initial="hidden" animate="visible" variants={fadeUp}>
             <p className="text-sm font-semibold text-cream/80 mb-6 leading-relaxed">
-              I build websites in 5 days and custom apps in days &mdash; fixed price, no agency wait.
+              Fixed pricing. Live in 1-6 weeks. Your automation, your rules.
             </p>
           </motion.div>
 
-          {/* Founder strip */}
-          <motion.div custom={2} initial="hidden" animate="visible" variants={fadeUp}>
+          {/* Founder strip with parallax */}
+          <motion.div 
+            custom={2.5} 
+            initial="hidden" 
+            animate="visible" 
+            variants={fadeUp}
+            whileHover={{ y: -4 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+          >
             <div className="flex items-start gap-3 mt-6 mb-8">
               <img
                 src="/andres-headshot.png"
@@ -45,7 +86,7 @@ export function Hero() {
                 loading="lazy"
               />
               <p className="text-cream/70 text-sm italic">
-                &ldquo;A dental office near me had a full waiting list and a front desk spending half the day on the phone managing appointments. Not because they were bad at their jobs &mdash; no one had ever set up a better way. We fixed it in two weeks.&rdquo;
+                &ldquo;A dental office near me had a full waiting list and a front desk spending half the day on the phone managing appointments. Not because they were bad at their jobs — no one had ever set up a better way. We fixed it in two weeks.&rdquo;
               </p>
             </div>
           </motion.div>
@@ -75,8 +116,34 @@ export function Hero() {
           </motion.div>
         </div>
 
-        {/* RIGHT COLUMN — empty on purpose to keep layout */}
-        <div className="hidden lg:flex items-center justify-center" />
+        {/* RIGHT COLUMN — subtle workflow visualization */}
+        <div className="hidden lg:flex items-center justify-center relative">
+          <motion.div
+            className="absolute inset-0 flex items-center justify-center"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            <svg width="280" height="280" viewBox="0 0 280 280" className="text-brand/20">
+              <circle cx="140" cy="60" r="28" stroke="currentColor" strokeWidth="2" fill="none" />
+              <circle cx="220" cy="140" r="28" stroke="currentColor" strokeWidth="2" fill="none" />
+              <circle cx="140" cy="220" r="28" stroke="currentColor" strokeWidth="2" fill="none" />
+              <circle cx="60" cy="140" r="28" stroke="currentColor" strokeWidth="2" fill="none" />
+              <path d="M 140 88 L 192 112" stroke="currentColor" strokeWidth="1.5" fill="none" opacity="0.4" />
+              <path d="M 220 168 L 168 192" stroke="currentColor" strokeWidth="1.5" fill="none" opacity="0.4" />
+              <path d="M 140 248 L 88 224" stroke="currentColor" strokeWidth="1.5" fill="none" opacity="0.4" />
+              <path d="M 60 112 L 112 88" stroke="currentColor" strokeWidth="1.5" fill="none" opacity="0.4" />
+              <circle cx="140" cy="140" r="40" stroke="currentColor" strokeWidth="2" fill="none" opacity="0.3" />
+            </svg>
+          </motion.div>
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+            className="absolute inset-0 flex items-center justify-center opacity-10"
+          >
+            <div className="w-48 h-48 border border-brand rounded-full" />
+          </motion.div>
+        </div>
       </div>
     </section>
   )

@@ -1,5 +1,7 @@
 import { useEffect } from 'react'
 import { Hero } from '../components/home/Hero'
+import { TrustBanner } from '../components/home/TrustBanner'
+import { IndustryTrust } from '../components/home/IndustryTrust'
 import { PainPoints } from '../components/home/PainPoints'
 import { Services } from '../components/home/Services'
 import { Results } from '../components/home/Results'
@@ -13,6 +15,8 @@ import { Testimonials } from '../components/home/Testimonials'
 import { CTASection } from '../components/home/CTASection'
 import { InlineCTA } from '../components/home/InlineCTA'
 import { AuditBanner } from '../components/home/AuditBanner'
+import { CTAVariations } from '../components/home/CTAVariations'
+import { DirectContact } from '../components/home/DirectContact'
 import { ScrollReveal } from '../components/ScrollReveal'
 
 export default function Home() {
@@ -66,6 +70,35 @@ export default function Home() {
       ]
     }
 
+    const serviceSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      'name': 'AI Automation & Consulting',
+      'provider': {
+        '@type': 'LocalBusiness',
+        'name': 'AI Montclair',
+        'address': {
+          '@type': 'PostalAddress',
+          'addressLocality': 'Montclair',
+          'addressRegion': 'NJ',
+          'postalCode': '07043',
+          'addressCountry': 'US'
+        }
+      },
+      'serviceArea': [
+        'Montclair, NJ',
+        'Bloomfield, NJ',
+        'Glen Ridge, NJ',
+        'Verona, NJ',
+        'Essex County, NJ'
+      ],
+      'areaServed': {
+        '@type': 'State',
+        'name': 'New Jersey'
+      },
+      'priceRange': '$500-$5000+'
+    }
+
     const faqSchema = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
@@ -108,15 +141,23 @@ export default function Home() {
     faqScript.textContent = JSON.stringify(faqSchema)
     document.head.appendChild(faqScript)
 
+    const serviceScript = document.createElement('script')
+    serviceScript.type = 'application/ld+json'
+    serviceScript.textContent = JSON.stringify(serviceSchema)
+    document.head.appendChild(serviceScript)
+
     return () => {
       localBizScript.remove()
       faqScript.remove()
+      serviceScript.remove()
     }
   }, [])
 
   return (
     <>
       <Hero />
+      <TrustBanner />
+      <IndustryTrust />
       <ScrollReveal delay={0.1}><Industries /></ScrollReveal>
       <ScrollReveal><PainPoints /></ScrollReveal>
       <ScrollReveal delay={0.1}><Services /></ScrollReveal>
@@ -127,8 +168,10 @@ export default function Home() {
       <ScrollReveal><SocialProof /></ScrollReveal>
       <ScrollReveal delay={0.1}><Testimonials /></ScrollReveal>
       <ScrollReveal><InlineCTA /></ScrollReveal>
+      <CTAVariations />
       <ScrollReveal><FAQ /></ScrollReveal>
       <AuditBanner />
+      <DirectContact />
       <ScrollReveal delay={0.1}><CTASection /></ScrollReveal>
     </>
   )
