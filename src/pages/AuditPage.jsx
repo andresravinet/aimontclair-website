@@ -79,7 +79,7 @@ export default function AuditPage() {
               transition={{ duration: 0.6 }}
             >
               <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8">
-                <h2 className="text-2xl font-bold text-navy mb-6">Book Your Free Audit</h2>
+                <h2 className="text-2xl font-bold text-navy mb-6">Book Your Free 15-Minute Audit</h2>
                 <form
                   action="https://formspree.io/f/xpwzpkqv"
                   method="POST"
@@ -187,7 +187,7 @@ export default function AuditPage() {
                     type="submit"
                     className="w-full py-3 px-6 bg-accent hover:bg-accent-dark text-white font-semibold rounded-lg transition-colors duration-200 text-lg cursor-pointer"
                   >
-                    Book My Free Audit →
+                    Book My Free 15-Minute Audit →
                   </button>
                 </form>
               </div>

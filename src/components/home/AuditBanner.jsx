@@ -24,7 +24,7 @@ export function AuditBanner() {
           </div>
           <div className="flex-shrink-0">
             <Button href="/audit" variant="primary" icon={ArrowRight} className="whitespace-nowrap">
-              Book Your Free Audit
+              Book Your Free 15-Minute Audit
             </Button>
           </div>
         </motion.div>

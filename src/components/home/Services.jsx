@@ -77,7 +77,7 @@ export function Services() {
             return (
               <motion.div key={idx} variants={card}>
                 <Link to={service.link || `/services/${service.slug}`}>
-                  <Card className="hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+                  <Card animate className="h-full">
                     <Icon className="w-10 h-10 text-brand mb-4" />
                     <h3 className="text-xl font-bold text-navy mb-3">{service.title}</h3>
                     <p className="text-gray-600 text-sm mb-4">{service.description}</p>

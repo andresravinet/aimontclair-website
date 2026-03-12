@@ -186,7 +186,7 @@ export default function Industries() {
             Let's discuss how AI automation can work for your industry. Start with a free audit.
           </p>
           <a href="/contact" className="btn-primary">
-            Schedule Your Free Audit
+            Schedule Your Free 15-Minute Audit
           </a>
         </div>
       </section>

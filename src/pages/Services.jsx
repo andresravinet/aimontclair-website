@@ -292,7 +292,7 @@ export default function Services() {
               Let&apos;s discuss your business and find the right fit. Free audit, zero obligation.
             </p>
             <Button href="/contact" variant="primary">
-              Get My Free Automation Audit
+              Get My Free 15-Minute Audit
             </Button>
           </motion.div>
         </div>

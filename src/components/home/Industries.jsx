@@ -1,5 +1,15 @@
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import { Briefcase, Heart, Home, Dumbbell, UtensilsCrossed, Wrench } from 'lucide-react'
+
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.08 } },
+}
+const cardVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: 'easeOut' } },
+}
 
 const industries = [
   {
@@ -52,23 +62,31 @@ export function Industries() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-60px' }}
+        >
           {industries.map((industry) => {
             const Icon = industry.icon
             return (
-              <Link key={industry.href} to={industry.href}>
-                <div className="bg-white rounded-xl border border-slate-100 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-200 h-full flex flex-col">
-                  <div className="w-12 h-12 rounded-full bg-brand-light flex items-center justify-center mb-4">
-                    <Icon className="w-6 h-6 text-brand" />
+              <motion.div key={industry.href} variants={cardVariants} whileHover={{ y: -6, boxShadow: '0 20px 40px rgba(0,0,0,0.12)' }} transition={{ type: 'spring', stiffness: 400, damping: 20 }}>
+                <Link to={industry.href}>
+                  <div className="bg-white rounded-xl border border-slate-100 p-6 h-full flex flex-col" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+                    <div className="w-12 h-12 rounded-full bg-brand-light flex items-center justify-center mb-4">
+                      <Icon className="w-6 h-6 text-brand" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-slate-900">{industry.title}</h3>
+                    <p className="text-sm text-slate-500 mt-1 flex-1">{industry.hook}</p>
+                    <span className="text-sm font-medium text-brand mt-4">Learn more &rarr;</span>
                   </div>
-                  <h3 className="text-lg font-semibold text-slate-900">{industry.title}</h3>
-                  <p className="text-sm text-slate-500 mt-1 flex-1">{industry.hook}</p>
-                  <span className="text-sm font-medium text-brand mt-4">Learn more &rarr;</span>
-                </div>
-              </Link>
+                </Link>
+              </motion.div>
             )
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   )

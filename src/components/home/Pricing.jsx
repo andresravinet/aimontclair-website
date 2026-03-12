@@ -79,7 +79,7 @@ export function Pricing() {
               ))}
             </ul>
             <Link to="/contact" className="block text-center py-2.5 px-4 bg-accent hover:bg-accent-dark text-white font-semibold rounded-lg transition-colors duration-200">
-              Get My Free Audit
+              Get My Free 15-Min Audit
             </Link>
           </div>
 

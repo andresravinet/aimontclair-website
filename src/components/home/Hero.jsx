@@ -49,7 +49,24 @@ function AnimatedHeadline({ text }) {
 
 export function Hero() {
   return (
-    <section className="bg-canvas grain-overlay text-white py-20 md:py-32">
+    <section className="bg-canvas grain-overlay text-white py-20 md:py-32 overflow-hidden">
+      {/* Organic blob — background personality element */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+        <svg
+          className="absolute -top-32 -right-32 opacity-[0.06] text-brand"
+          width="700" height="700" viewBox="0 0 700 700" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M350,60 C450,40 580,120 620,240 C670,380 620,520 510,580 C400,640 240,610 160,510 C80,410 80,270 150,170 C210,80 260,80 350,60Z" />
+        </svg>
+        <svg
+          className="absolute -bottom-20 -left-20 opacity-[0.04] text-accent"
+          width="500" height="500" viewBox="0 0 500 500" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M250,40 C320,20 410,80 440,170 C480,280 440,390 360,430 C280,470 170,450 110,370 C50,290 60,180 120,110 C170,50 190,55 250,40Z" />
+        </svg>
+      </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh] py-20">
         {/* LEFT COLUMN */}
         <div>
@@ -94,7 +111,7 @@ export function Hero() {
           <motion.div custom={3} initial="hidden" animate="visible" variants={fadeUp}>
             <div className="flex flex-col sm:flex-row gap-4 mb-4 items-center">
               <Button href="/contact" variant="primary" icon={ArrowRight}>
-                Get Your Free Automation Audit
+                Get Your Free 15-Minute Audit
               </Button>
               <a
                 href="#how-it-works"

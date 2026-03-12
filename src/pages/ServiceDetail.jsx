@@ -502,7 +502,7 @@ export default function ServiceDetail() {
               {data.description}
             </p>
             <Button href="/contact" variant="primary">
-              Get My Free Automation Audit
+              Get My Free 15-Minute Audit
             </Button>
           </motion.div>
         </div>
@@ -791,7 +791,7 @@ export default function ServiceDetail() {
               Let&apos;s talk about your business, your challenges, and what automation could mean for you. Free audit, zero obligation.
             </p>
             <Button href="/contact" variant="primary">
-              Get My Free Automation Audit
+              Get My Free 15-Minute Audit
             </Button>
           </motion.div>
         </div>

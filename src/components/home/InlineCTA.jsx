@@ -17,7 +17,7 @@ export function InlineCTA({ industry = null }) {
           to="/contact"
           className="inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
         >
-          <ArrowRight size={18} /> Get Your Free Audit Today
+          <ArrowRight size={18} /> Get Your Free 15-Min Audit Today
         </Link>
         <span className="text-xs text-gray-500 self-center">
           ✓ No credit card required

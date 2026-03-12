@@ -28,7 +28,7 @@ export function StickyBookingCTA() {
           href="mailto:hello@aimontclair.com"
           className="bg-brand text-white text-sm sm:text-base font-bold px-6 py-2.5 rounded-lg hover:bg-brand-dark transition-all whitespace-nowrap shadow-lg hover:shadow-xl hover:-translate-y-0.5"
         >
-          Get Free Audit Now
+          Get Free 15-Min Audit
         </a>
       </div>
     </div>

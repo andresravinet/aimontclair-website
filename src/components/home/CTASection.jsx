@@ -18,7 +18,7 @@ export function CTASection() {
             I&apos;ll show you exactly where you can reclaim 5+ hours per week. Free 30-minute audit — no obligation, no sales pitch.
           </p>
           <Button href="/contact" variant="primary">
-            Get My Free Automation Audit
+            Get My Free 15-Minute Audit
           </Button>
         </motion.div>
       </div>
