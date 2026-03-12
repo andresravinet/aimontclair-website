@@ -31,9 +31,11 @@ export default function Home() {
     const schema = {
       '@context': 'https://schema.org',
       '@type': 'LocalBusiness',
+      '@id': 'https://aimontclair.com/#business',
       'name': 'AI Montclair',
       'image': 'https://aimontclair.com/logo.png',
-      'description': 'AI automation consulting for small businesses in Montclair, NJ',
+      'description': 'AI automation consulting for small businesses in Montclair, NJ. We build chatbots, scheduling automation, and workflow systems. 50+ NJ businesses served. Fixed pricing. 24-hour response guarantee.',
+      'url': 'https://aimontclair.com',
       'address': {
         '@type': 'PostalAddress',
         'addressLocality': 'Montclair',
@@ -59,11 +61,16 @@ export default function Home() {
           'name': 'Verona, NJ'
         },
         {
-          '@type': 'City',
+          '@type': 'AdministrativeArea',
           'name': 'Essex County, NJ'
         }
       ],
       'priceRange': '$500-$5000+',
+      'contactPoint': {
+        '@type': 'ContactPoint',
+        'contactType': 'Customer Service',
+        'availableLanguage': ['en']
+      },
       'sameAs': [
         'https://www.linkedin.com/company/ai-montclair',
         'https://twitter.com/aimontclair'
@@ -125,6 +132,14 @@ export default function Home() {
           'acceptedAnswer': {
             '@type': 'Answer',
             'text': 'No. We offer fixed-price projects with no long-term contracts. You own the automation after delivery.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'What response time can I expect?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'We guarantee a 24-hour response to all questions and updates during your project.'
           }
         }
       ]
