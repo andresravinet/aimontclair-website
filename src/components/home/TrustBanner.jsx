@@ -44,8 +44,9 @@ export function TrustBanner() {
   ]
 
   return (
-    <section className="bg-canvas text-white py-12 md:py-16 border-b border-brand/20">
+    <section className="bg-canvas text-white py-16 md:py-20 border-b border-brand/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p className="text-xs tracking-[0.2em] uppercase font-semibold text-cream mb-8 text-center">Why work with us</p>
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -56,12 +57,16 @@ export function TrustBanner() {
           {stats.map((stat) => {
             const Icon = stat.icon
             return (
-              <motion.div key={stat.label} variants={itemVariants} className="flex items-start gap-4">
-                <Icon className="w-8 h-8 text-brand flex-shrink-0 mt-1" />
+              <motion.div 
+                key={stat.label} 
+                variants={itemVariants} 
+                className="flex items-start gap-4 group hover:bg-white/5 p-4 rounded-lg transition-all"
+              >
+                <Icon className="w-10 h-10 text-accent flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
                 <div>
-                  <p className="text-sm text-cream/60 font-medium">{stat.label}</p>
-                  <p className="text-3xl font-bold text-cream mt-1">{stat.value}</p>
-                  <p className="text-sm text-cream/50 mt-1">{stat.description}</p>
+                  <p className="text-sm text-cream/70 font-medium group-hover:text-cream/90 transition-colors">{stat.label}</p>
+                  <p className="text-4xl font-bold text-cream mt-1">{stat.value}</p>
+                  <p className="text-sm text-cream/60 mt-1 group-hover:text-cream/70 transition-colors">{stat.description}</p>
                 </div>
               </motion.div>
             )

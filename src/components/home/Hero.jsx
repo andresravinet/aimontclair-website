@@ -76,13 +76,13 @@ export function Hero() {
 
           <motion.div custom={1.5} initial="hidden" animate="visible" variants={fadeUp}>
             <p className="text-xl text-cream-muted mb-4 leading-relaxed">
-              Stop losing hours to scheduling chaos, missed leads, and repetitive work. I help Montclair businesses &mdash; dental offices, law firms, contractors, restaurants &mdash; reclaim their time with AI and automation that actually works.
+              Your front desk shouldn\'t spend half the day on the phone. Your team shouldn\'t be doing the boring stuff. I help Montclair businesses &mdash; dental offices, law firms, real estate, gyms &mdash; automate the repetitive work so everyone focuses on what actually matters.
             </p>
           </motion.div>
 
           <motion.div custom={2} initial="hidden" animate="visible" variants={fadeUp}>
             <p className="text-sm font-semibold text-cream/80 mb-6 leading-relaxed">
-              Fixed pricing. Live in 1-6 weeks. Your automation, your rules.
+              Fixed pricing. Live in 1-6 weeks. Built for Montclair businesses like yours.
             </p>
           </motion.div>
 
@@ -110,25 +110,32 @@ export function Hero() {
 
           <motion.div custom={3} initial="hidden" animate="visible" variants={fadeUp}>
             <div className="flex flex-col sm:flex-row gap-4 mb-4 items-center">
-              <Button href="/contact" variant="primary" icon={ArrowRight}>
-                Get Your Free 15-Minute Audit
-              </Button>
-              <a
+              <motion.div
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+              >
+                <Button href="/contact" variant="primary" icon={ArrowRight}>
+                  Get Your Free Audit
+                </Button>
+              </motion.div>
+              <motion.a
                 href="#how-it-works"
                 className="text-cream-muted hover:text-cream transition-colors text-base flex items-center gap-2 underline underline-offset-2"
+                whileHover={{ x: 4 }}
               >
                 See how it works
                 <ArrowDown size={16} />
-              </a>
+              </motion.a>
             </div>
 
-            <div className="bg-brand/20 backdrop-blur-sm rounded-lg p-4 inline-block mt-6 border border-brand/40">
+            <div className="bg-brand/20 backdrop-blur-sm rounded-lg p-4 inline-block mt-6 border border-brand/40 hover:bg-brand/30 transition-colors">
               <p className="text-sm font-600 text-cream">
-                Serving Montclair, Glen Ridge, Verona, Bloomfield, and the greater Essex County area
+                Serving Montclair, Glen Ridge, Verona, Bloomfield, and Essex County
               </p>
             </div>
             <p className="text-cream/50 text-xs mt-3">
-              Projects from $500 &middot; Free audit &middot; No commitment
+              Projects from $500 &middot; Free audit &middot; No long-term contracts
             </p>
           </motion.div>
         </div>

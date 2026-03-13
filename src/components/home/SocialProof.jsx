@@ -75,11 +75,13 @@ export function SocialProof() {
             <motion.div
               key={i}
               variants={card}
-              className="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
+              whileHover={{ y: -8 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 12 }}
+              className="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition-all duration-200 group cursor-pointer"
             >
-              <div className="h-1 bg-brand rounded-t-xl" />
+              <div className="h-1 bg-gradient-to-r from-brand to-brand-dark group-hover:h-2 transition-all" />
               <div className="p-6">
-                <div className="text-3xl mb-3">{item.icon}</div>
+                <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">{item.icon}</div>
                 <div className="text-xs font-semibold text-brand uppercase tracking-wide mb-1">
                   {item.business}
                 </div>

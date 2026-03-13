@@ -42,12 +42,12 @@ export function Results() {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <p className="text-xs tracking-[0.2em] uppercase font-semibold text-brand mb-3">Outcomes</p>
+          <p className="text-xs tracking-[0.2em] uppercase font-semibold text-brand mb-3">What changes</p>
           <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
-            Real results from my clients
+            Real results from real Montclair clients
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl">
-            Quantified outcomes. No hype. Just automation that works.
+            These aren\'t hypothetical numbers. They\'re what happens when the busy work gets automated.
           </p>
         </motion.div>
 
@@ -90,13 +90,16 @@ export function Results() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="mt-12 bg-white rounded-xl p-8 border border-slate-100 text-left"
+          className="mt-12 bg-gradient-to-r from-brand/5 to-brand-dark/5 rounded-xl p-8 border border-slate-100 text-left"
         >
-          <p className="text-gray-600 mb-2">
-            <span className="font-semibold text-navy">Average project:</span> Live in 3-4 weeks
+          <p className="text-gray-600 mb-3">
+            <span className="font-semibold text-navy">How long does this take?</span> Most projects go live in 3-4 weeks. We move fast.
+          </p>
+          <p className="text-gray-600 mb-3">
+            <span className="font-semibold text-navy">What does it cost?</span> $500-$5,000+ depending on what you\'re automating. No surprise fees.
           </p>
           <p className="text-gray-600">
-            <span className="font-semibold text-navy">Pricing:</span> $500-$5,000+ depending on scope. Free audit to start.
+            <span className="font-semibold text-navy">What\'s first?</span> A free 30-minute conversation about where automation would help most.
           </p>
         </motion.div>
       </div>
