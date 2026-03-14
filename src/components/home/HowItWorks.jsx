@@ -108,6 +108,27 @@ export function HowItWorks() {
             </div>
           </div>
         </motion.div>
+
+        {/* Integrations subtitle */}
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mt-8 text-center"
+        >
+          <p className="text-sm text-gray-600 mb-4">Works with the tools you already use</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {['Clio', 'Dentrix', 'HubSpot', 'Zapier', 'Make', 'Google Calendar', 'Outlook'].map(tool => (
+              <span
+                key={tool}
+                className="px-3 py-1 bg-slate-100 border border-slate-200 rounded-full text-slate-600 text-xs font-medium"
+              >
+                {tool}
+              </span>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   )

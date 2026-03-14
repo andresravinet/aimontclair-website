@@ -1,11 +1,11 @@
 import { useEffect } from 'react'
 import { Hero } from '../components/home/Hero'
+import { TrustBadge } from '../components/home/TrustBadge'
 import { TrustBanner } from '../components/home/TrustBanner'
 import { IndustryTrust } from '../components/home/IndustryTrust'
 import { PainPoints } from '../components/home/PainPoints'
 import { Services } from '../components/home/Services'
 import { Results } from '../components/home/Results'
-import { Integrations } from '../components/home/Integrations'
 import { SocialProof } from '../components/home/SocialProof'
 import { HowItWorks } from '../components/home/HowItWorks'
 import { Pricing } from '../components/home/Pricing'
@@ -171,14 +171,14 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <TrustBadge />
       <TrustBanner />
       <IndustryTrust />
       <ScrollReveal delay={0.1}><Industries /></ScrollReveal>
       <ScrollReveal><PainPoints /></ScrollReveal>
       <ScrollReveal delay={0.1}><Services /></ScrollReveal>
       <ScrollReveal><Results /></ScrollReveal>
-      <Integrations />
-      <ScrollReveal><HowItWorks /></ScrollReveal>
+      <ScrollReveal delay={0.1}><HowItWorks /></ScrollReveal>
       <ScrollReveal><Pricing /></ScrollReveal>
       <ScrollReveal><SocialProof /></ScrollReveal>
       <ScrollReveal delay={0.1}><Testimonials /></ScrollReveal>

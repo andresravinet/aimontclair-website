@@ -53,14 +53,14 @@ export function Hero() {
       {/* Organic blob — background personality element */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
         <svg
-          className="absolute -top-32 -right-32 opacity-[0.06] text-brand"
+          className="absolute -top-32 -right-32 opacity-[0.10] text-brand"
           width="700" height="700" viewBox="0 0 700 700" fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path d="M350,60 C450,40 580,120 620,240 C670,380 620,520 510,580 C400,640 240,610 160,510 C80,410 80,270 150,170 C210,80 260,80 350,60Z" />
         </svg>
         <svg
-          className="absolute -bottom-20 -left-20 opacity-[0.04] text-accent"
+          className="absolute -bottom-20 -left-20 opacity-[0.06] text-accent"
           width="500" height="500" viewBox="0 0 500 500" fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -76,7 +76,7 @@ export function Hero() {
 
           <motion.div custom={1.5} initial="hidden" animate="visible" variants={fadeUp}>
             <p className="text-xl text-cream-muted mb-4 leading-relaxed">
-              Your front desk shouldn\'t spend half the day on the phone. Your team shouldn\'t be doing the boring stuff. I help Montclair businesses &mdash; dental offices, law firms, real estate, gyms &mdash; automate the repetitive work so everyone focuses on what actually matters.
+              Your phone rings all day. Your team spends hours on scheduling, follow-ups, and paperwork. I help Montclair businesses &mdash; dental offices, law firms, real estate, gyms &mdash; build the systems to handle that automatically, so you actually have time to grow.
             </p>
           </motion.div>
 
@@ -115,18 +115,23 @@ export function Hero() {
                 whileTap={{ scale: 0.98 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 10 }}
               >
-                <Button href="/contact" variant="primary" icon={ArrowRight}>
+                <Button href="/audit" variant="primary" icon={ArrowRight}>
                   Get Your Free Audit
                 </Button>
               </motion.div>
-              <motion.a
-                href="#how-it-works"
-                className="text-cream-muted hover:text-cream transition-colors text-base flex items-center gap-2 underline underline-offset-2"
-                whileHover={{ x: 4 }}
+              <motion.div
+                whileHover={{ scale: 1.02, y: -1 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 10 }}
               >
-                See how it works
-                <ArrowDown size={16} />
-              </motion.a>
+                <a
+                  href="#how-it-works"
+                  className="px-6 py-3 border-2 border-cream/30 text-cream rounded-lg hover:bg-cream/5 hover:border-cream/50 transition-all duration-300 inline-flex items-center gap-2 font-600"
+                >
+                  See How It Works
+                  <ArrowDown size={18} />
+                </a>
+              </motion.div>
             </div>
 
             <div className="bg-brand/20 backdrop-blur-sm rounded-lg p-4 inline-block mt-6 border border-brand/40 hover:bg-brand/30 transition-colors">
